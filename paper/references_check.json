@@ -1,0 +1,1463 @@
+{
+ "garfield1972": {
+  "id": "10.1126/science.178.4060.471",
+  "ok": true,
+  "title": "Citation Analysis as a Tool in Journal Evaluation",
+  "subtitle": "Journals can be ranked by frequency and impact of citations for science policy studies.",
+  "authors": [
+   "Garfield, Eugene"
+  ],
+  "year": 1972,
+  "venue": "Science",
+  "volume": "178",
+  "issue": "4060",
+  "pages": "471-479",
+  "type": "journal-article",
+  "doi": "10.1126/science.178.4060.471",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "source": "crossref"
+ },
+ "hirsch2005": {
+  "id": "10.1073/pnas.0507655102",
+  "ok": true,
+  "title": "An index to quantify an individual's scientific research output",
+  "subtitle": null,
+  "authors": [
+   "Hirsch, J. E."
+  ],
+  "year": 2005,
+  "venue": "Proceedings of the National Academy of Sciences",
+  "volume": "102",
+  "issue": "46",
+  "pages": "16569-16572",
+  "type": "journal-article",
+  "doi": "10.1073/pnas.0507655102",
+  "publisher": "National Academy of Sciences",
+  "source": "crossref"
+ },
+ "hicks2015": {
+  "id": "10.1038/520429a",
+  "ok": true,
+  "title": "Bibliometrics: The Leiden Manifesto for research metrics",
+  "subtitle": null,
+  "authors": [
+   "Hicks, Diana",
+   "Wouters, Paul",
+   "Waltman, Ludo",
+   "de Rijcke, Sarah",
+   "Rafols, Ismael"
+  ],
+  "year": 2015,
+  "venue": "Nature",
+  "volume": "520",
+  "issue": "7548",
+  "pages": "429-431",
+  "type": "journal-article",
+  "doi": "10.1038/520429a",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "wang2013": {
+  "id": "10.1126/science.1237825",
+  "ok": true,
+  "title": "Quantifying Long-Term Scientific Impact",
+  "subtitle": null,
+  "authors": [
+   "Wang, Dashun",
+   "Song, Chaoming",
+   "Barabási, Albert-László"
+  ],
+  "year": 2013,
+  "venue": "Science",
+  "volume": "342",
+  "issue": "6154",
+  "pages": "127-132",
+  "type": "journal-article",
+  "doi": "10.1126/science.1237825",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "source": "crossref"
+ },
+ "sinatra2016": {
+  "id": "10.1126/science.aaf5239",
+  "ok": true,
+  "title": "Quantifying the evolution of individual scientific impact",
+  "subtitle": null,
+  "authors": [
+   "Sinatra, Roberta",
+   "Wang, Dashun",
+   "Deville, Pierre",
+   "Song, Chaoming",
+   "Barabási, Albert-László"
+  ],
+  "year": 2016,
+  "venue": "Science",
+  "volume": "354",
+  "issue": "6312",
+  "pages": "aaf5239",
+  "type": "journal-article",
+  "doi": "10.1126/science.aaf5239",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "source": "crossref"
+ },
+ "fortunato2018": {
+  "id": "10.1126/science.aao0185",
+  "ok": true,
+  "title": "Science of science",
+  "subtitle": null,
+  "authors": [
+   "Fortunato, Santo",
+   "Bergstrom, Carl T.",
+   "Börner, Katy",
+   "Evans, James A.",
+   "Helbing, Dirk",
+   "Milojević, Staša",
+   "Petersen, Alexander M.",
+   "Radicchi, Filippo",
+   "Sinatra, Roberta",
+   "Uzzi, Brian",
+   "Vespignani, Alessandro",
+   "Waltman, Ludo",
+   "Wang, Dashun",
+   "Barabási, Albert-László"
+  ],
+  "year": 2018,
+  "venue": "Science",
+  "volume": "359",
+  "issue": "6379",
+  "pages": "eaao0185",
+  "type": "journal-article",
+  "doi": "10.1126/science.aao0185",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "source": "crossref"
+ },
+ "yan2011": {
+  "id": "10.1145/2063576.2063757",
+  "ok": true,
+  "title": "Citation count prediction: learning to estimate future citations for literature",
+  "subtitle": "learning to estimate future citations for literature",
+  "authors": [
+   "Yan, Rui",
+   "Tang, Jie",
+   "Liu, Xiaobing",
+   "Shan, Dongdong",
+   "Li, Xiaoming"
+  ],
+  "year": 2011,
+  "venue": "Proceedings of the 20th ACM international conference on Information and knowledge management",
+  "volume": null,
+  "issue": null,
+  "pages": "1247-1252",
+  "type": "proceedings-article",
+  "doi": "10.1145/2063576.2063757",
+  "publisher": "ACM",
+  "source": "crossref",
+  "overrides": [
+   "subtitle"
+  ]
+ },
+ "stegehuis2015": {
+  "id": "10.1016/j.joi.2015.06.005",
+  "ok": true,
+  "title": "Predicting the long-term citation impact of recent publications",
+  "subtitle": null,
+  "authors": [
+   "Stegehuis, Clara",
+   "Litvak, Nelly",
+   "Waltman, Ludo"
+  ],
+  "year": 2015,
+  "venue": "Journal of Informetrics",
+  "volume": "9",
+  "issue": "3",
+  "pages": "642-657",
+  "type": "journal-article",
+  "doi": "10.1016/j.joi.2015.06.005",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "xia2023": {
+  "id": "10.1007/s11192-022-04547-8",
+  "ok": true,
+  "title": "A review of scientific impact prediction: tasks, features and methods",
+  "subtitle": null,
+  "authors": [
+   "Xia, Wanjun",
+   "Li, Tianrui",
+   "Li, Chongshou"
+  ],
+  "year": 2023,
+  "venue": "Scientometrics",
+  "volume": "128",
+  "issue": "1",
+  "pages": "543-585",
+  "type": "journal-article",
+  "doi": "10.1007/s11192-022-04547-8",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "merton1968": {
+  "id": "10.1126/science.159.3810.56",
+  "ok": true,
+  "title": "The Matthew Effect in Science",
+  "subtitle": "The reward and communication systems of science are considered.",
+  "authors": [
+   "Merton, Robert K."
+  ],
+  "year": 1968,
+  "venue": "Science",
+  "volume": "159",
+  "issue": "3810",
+  "pages": "56-63",
+  "type": "journal-article",
+  "doi": "10.1126/science.159.3810.56",
+  "publisher": "American Association for the Advancement of Science (AAAS)",
+  "source": "crossref"
+ },
+ "abrishami2019": {
+  "id": "10.1016/j.joi.2019.02.011",
+  "ok": true,
+  "title": "Predicting citation counts based on deep neural network learning techniques",
+  "subtitle": null,
+  "authors": [
+   "Abrishami, Ali",
+   "Aliakbary, Sadegh"
+  ],
+  "year": 2019,
+  "venue": "Journal of Informetrics",
+  "volume": "13",
+  "issue": "2",
+  "pages": "485-499",
+  "type": "journal-article",
+  "doi": "10.1016/j.joi.2019.02.011",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "holm2020": {
+  "id": "2012.05742",
+  "ok": true,
+  "title": "Longitudinal Citation Prediction using Temporal Graph Neural Networks",
+  "authors": [
+   "Andreas Nugaard Holm",
+   "Barbara Plank",
+   "Dustin Wright",
+   "Isabelle Augenstein"
+  ],
+  "year": 2020,
+  "venue": "arXiv preprint arXiv:2012.05742",
+  "arxiv": "2012.05742",
+  "source": "arxiv"
+ },
+ "kapoor2023": {
+  "id": "10.1016/j.patter.2023.100804",
+  "ok": true,
+  "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+  "subtitle": null,
+  "authors": [
+   "Kapoor, Sayash",
+   "Narayanan, Arvind"
+  ],
+  "year": 2023,
+  "venue": "Patterns",
+  "volume": "4",
+  "issue": "9",
+  "pages": "100804",
+  "type": "journal-article",
+  "doi": "10.1016/j.patter.2023.100804",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "li2019biblio": {
+  "id": "10.1109/SMC.2019.8913961",
+  "ok": true,
+  "title": "A Deep Learning Methodology for Citation Count Prediction with Large-scale Biblio-Features",
+  "subtitle": null,
+  "authors": [
+   "Li, Mengiun",
+   "Xu, Jianguo",
+   "Ge, Bingfeng",
+   "Liu, Jia",
+   "Jiang, Jiang",
+   "Zhao, Qingsong"
+  ],
+  "year": 2019,
+  "venue": "2019 IEEE International Conference on Systems, Man and Cybernetics (SMC)",
+  "volume": null,
+  "issue": null,
+  "pages": "1172-1176",
+  "type": "proceedings-article",
+  "doi": "10.1109/smc.2019.8913961",
+  "publisher": "IEEE",
+  "source": "crossref"
+ },
+ "cummings2020": {
+  "id": "10.1109/ICASSP40776.2020.9054769",
+  "ok": true,
+  "title": "Structured Citation Trend Prediction Using Graph Neural Networks",
+  "subtitle": null,
+  "authors": [
+   "Cummings, Daniel",
+   "Nassar, Marcel"
+  ],
+  "year": 2020,
+  "venue": "ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+  "volume": null,
+  "issue": null,
+  "pages": "3897-3901",
+  "type": "proceedings-article",
+  "doi": "10.1109/icassp40776.2020.9054769",
+  "publisher": "IEEE",
+  "source": "crossref"
+ },
+ "jiang2021hints": {
+  "id": "10.1145/3442381.3450107",
+  "ok": true,
+  "title": "HINTS: Citation Time Series Prediction for New Publications via Dynamic Heterogeneous Information Network Embedding",
+  "subtitle": null,
+  "authors": [
+   "Jiang, Song",
+   "Koch, Bernard",
+   "Sun, Yizhou"
+  ],
+  "year": 2021,
+  "venue": "Proceedings of the Web Conference 2021",
+  "volume": null,
+  "issue": null,
+  "pages": "3158-3167",
+  "type": "proceedings-article",
+  "doi": "10.1145/3442381.3450107",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "kleminski2021": {
+  "id": "10.1016/j.joi.2021.101200",
+  "ok": true,
+  "title": "Where should I publish? Heterogeneous, networks-based prediction of paper’s citation success",
+  "subtitle": null,
+  "authors": [
+   "Klemiński, Rajmund",
+   "Kazienko, Przemyslaw",
+   "Kajdanowicz, Tomasz"
+  ],
+  "year": 2021,
+  "venue": "Journal of Informetrics",
+  "volume": "15",
+  "issue": "3",
+  "pages": "101200",
+  "type": "journal-article",
+  "doi": "10.1016/j.joi.2021.101200",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "xu2022sihdgnn": {
+  "id": "10.1016/j.knosys.2021.107839",
+  "ok": true,
+  "title": "Heterogeneous dynamical academic network for learning scientific impact propagation",
+  "subtitle": null,
+  "authors": [
+   "Xu, Xovee",
+   "Zhong, Ting",
+   "Li, Ce",
+   "Trajcevski, Goce",
+   "Zhou, Fan"
+  ],
+  "year": 2022,
+  "venue": "Knowledge-Based Systems",
+  "volume": "238",
+  "issue": null,
+  "pages": "107839",
+  "type": "journal-article",
+  "doi": "10.1016/j.knosys.2021.107839",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "xiao2022esmr": {
+  "id": "10.1007/s10489-021-02468-2",
+  "ok": true,
+  "title": "Heterogeneous academic network embedding based multivariate random-walk model for predicting scientific impact",
+  "subtitle": null,
+  "authors": [
+   "Xiao, Chunjing",
+   "Sun, Leilei",
+   "Han, Jianing",
+   "Qiao, Yongwei"
+  ],
+  "year": 2022,
+  "venue": "Applied Intelligence",
+  "volume": "52",
+  "issue": "2",
+  "pages": "2171-2188",
+  "type": "journal-article",
+  "doi": "10.1007/s10489-021-02468-2",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "geng2022dgni": {
+  "id": "10.1145/3511808.3557398",
+  "ok": true,
+  "title": "Modeling Dynamic Heterogeneous Graph and Node Importance for Future Citation Prediction",
+  "subtitle": null,
+  "authors": [
+   "Geng, Hao",
+   "Wang, Deqing",
+   "Zhuang, Fuzhen",
+   "Ming, Xuehua",
+   "Du, Chenguang",
+   "Jiang, Ting",
+   "Guo, Haolong",
+   "Liu, Rui"
+  ],
+  "year": 2022,
+  "venue": "Proceedings of the 31st ACM International Conference on Information & Knowledge Management",
+  "volume": null,
+  "issue": null,
+  "pages": "572-581",
+  "type": "proceedings-article",
+  "doi": "10.1145/3511808.3557398",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "ochi2022": {
+  "id": "10.1371/journal.pone.0274253",
+  "ok": true,
+  "title": "Predictive analysis of multiple future scientific impacts by embedding a heterogeneous network",
+  "subtitle": null,
+  "authors": [
+   "Ochi, Masanao",
+   "Shiro, Masanori",
+   "Mori, Jun’ichiro",
+   "Sakata, Ichiro"
+  ],
+  "year": 2022,
+  "venue": "PLOS ONE",
+  "volume": "17",
+  "issue": "9",
+  "pages": "e0274253",
+  "type": "journal-article",
+  "doi": "10.1371/journal.pone.0274253",
+  "publisher": "Public Library of Science (PLoS)",
+  "source": "crossref"
+ },
+ "wang2023agsta": {
+  "id": "10.1007/s11192-022-04541-0",
+  "ok": true,
+  "title": "AGSTA-NET: adaptive graph spatiotemporal attention network for citation count prediction",
+  "subtitle": null,
+  "authors": [
+   "Wang, Bin",
+   "Wu, Feng",
+   "Shi, Lukui"
+  ],
+  "year": 2023,
+  "venue": "Scientometrics",
+  "volume": "128",
+  "issue": "1",
+  "pages": "511-541",
+  "type": "journal-article",
+  "doi": "10.1007/s11192-022-04541-0",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "he2023h2cgl": {
+  "id": "10.1016/j.ipm.2023.103512",
+  "ok": true,
+  "title": "H2CGL: Modeling dynamics of citation network for impact prediction",
+  "subtitle": null,
+  "authors": [
+   "He, Guoxiu",
+   "Xue, Zhikai",
+   "Jiang, Zhuoren",
+   "Kang, Yangyang",
+   "Zhao, Star",
+   "Lu, Wei"
+  ],
+  "year": 2023,
+  "venue": "Information Processing & Management",
+  "volume": "60",
+  "issue": "6",
+  "pages": "103512",
+  "type": "journal-article",
+  "doi": "10.1016/j.ipm.2023.103512",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "yang2023cahgn": {
+  "id": "10.1109/ICDE55515.2023.00058",
+  "ok": true,
+  "title": "Revisiting Citation Prediction with Cluster-Aware Text-Enhanced Heterogeneous Graph Neural Networks",
+  "subtitle": null,
+  "authors": [
+   "Yang, Carl",
+   "Han, Jiawei"
+  ],
+  "year": 2023,
+  "venue": "2023 IEEE 39th International Conference on Data Engineering (ICDE)",
+  "volume": null,
+  "issue": null,
+  "pages": "682-695",
+  "type": "proceedings-article",
+  "doi": "10.1109/icde55515.2023.00058",
+  "publisher": "IEEE",
+  "source": "crossref"
+ },
+ "ochi2023": {
+  "id": "10.1007/978-3-031-43088-6_7",
+  "ok": true,
+  "title": "Integrating Linguistic and Citation Information with Transformer for Predicting Top-Cited Papers",
+  "subtitle": null,
+  "authors": [
+   "Ochi, Masanao",
+   "Shiro, Masanori",
+   "Mori, Jun’ichiro",
+   "Sakata, Ichiro"
+  ],
+  "year": 2023,
+  "venue": "Web Information Systems and Technologies. Lecture Notes in Business Information Processing, vol 494",
+  "volume": null,
+  "issue": null,
+  "pages": "121-141",
+  "type": "book-chapter",
+  "doi": "10.1007/978-3-031-43088-6_7",
+  "publisher": "Springer Nature Switzerland",
+  "source": "crossref",
+  "overrides": [
+   "venue"
+  ]
+ },
+ "xue2024dppdcc": {
+  "id": "10.1145/3627673.3679546",
+  "ok": true,
+  "title": "Predicting Scientific Impact Through Diffusion, Conformity, and Contribution Disentanglement",
+  "subtitle": null,
+  "authors": [
+   "Xue, Zhikai",
+   "He, Guoxiu",
+   "Jiang, Zhuoren",
+   "Gu, Sichen",
+   "Kang, Yangyang",
+   "Zhao, Star",
+   "Lu, Wei"
+  ],
+  "year": 2024,
+  "venue": "Proceedings of the 33rd ACM International Conference on Information and Knowledge Management",
+  "volume": null,
+  "issue": null,
+  "pages": "2764-2774",
+  "type": "proceedings-article",
+  "doi": "10.1145/3627673.3679546",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "qin2024mffggcn": {
+  "id": "10.1109/MLNLP63328.2024.10800652",
+  "ok": true,
+  "title": "Citation Counts Prediction of Publications Based on Gated Graph Convolutional Neural Network Model with Multi-Feature Fusion",
+  "subtitle": null,
+  "authors": [
+   "Qin, Hongwu",
+   "Zheng, Yijin",
+   "Ma, Xiuqin",
+   "Tang, Kexin"
+  ],
+  "year": 2024,
+  "venue": "2024 7th International Conference on Machine Learning and Natural Language Processing (MLNLP)",
+  "volume": null,
+  "issue": null,
+  "pages": "1-7",
+  "type": "proceedings-article",
+  "doi": "10.1109/mlnlp63328.2024.10800652",
+  "publisher": "IEEE",
+  "source": "crossref"
+ },
+ "luo2025": {
+  "id": "10.1177/01655515231191213",
+  "ok": true,
+  "title": "Do the paper’s connections to existing work disclose its citation impact? A study based on graph representation learning",
+  "subtitle": null,
+  "authors": [
+   "Luo, Zhuoran",
+   "He, Jiangen",
+   "Qian, Jiajia",
+   "Wang, Yuqi",
+   "Lu, Wei"
+  ],
+  "year": 2025,
+  "venue": "Journal of Information Science",
+  "volume": "51",
+  "issue": "3",
+  "pages": "638-657",
+  "type": "journal-article",
+  "doi": "10.1177/01655515231191213",
+  "publisher": "SAGE Publications",
+  "source": "crossref"
+ },
+ "zhang2025cdchgn": {
+  "id": "10.1016/j.knosys.2025.114282",
+  "ok": true,
+  "title": "Enhanced temporal graph neural network for predicting future citations on academic graphs: A dual clustering-driven and centrality-guided approach",
+  "subtitle": null,
+  "authors": [
+   "Zhang, Tianming",
+   "Fang, Junkai",
+   "Chen, Xuanyu",
+   "Yang, Zhengyi",
+   "Cao, Bin"
+  ],
+  "year": 2025,
+  "venue": "Knowledge-Based Systems",
+  "volume": "329",
+  "issue": null,
+  "pages": "114282",
+  "type": "journal-article",
+  "doi": "10.1016/j.knosys.2025.114282",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "lu2026newborn": {
+  "id": "10.1145/3774904.3792702",
+  "ok": true,
+  "title": "From Newborn to Impact: Bias-Aware Citation Prediction",
+  "subtitle": null,
+  "authors": [
+   "Lu, Mingfei",
+   "Wu, Mengjia",
+   "Xu, Jiawei",
+   "Li, Weikai",
+   "Liu, Feng",
+   "Ding, Ying",
+   "Sun, Yizhou",
+   "Lu, Jie",
+   "Zhang, Yi"
+  ],
+  "year": 2026,
+  "venue": "Proceedings of the ACM Web Conference 2026",
+  "volume": null,
+  "issue": null,
+  "pages": "7600-7609",
+  "type": "proceedings-article",
+  "doi": "10.1145/3774904.3792702",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "li2026collab": {
+  "id": "10.1016/j.ipm.2026.104634",
+  "ok": true,
+  "title": "Neural embeddings of collaboration networks predict citation impact and innovation",
+  "subtitle": null,
+  "authors": [
+   "Li, Chengyu",
+   "Yang, Wenlong",
+   "Li, Meiling",
+   "Wang, Yang"
+  ],
+  "year": 2026,
+  "venue": "Information Processing & Management",
+  "volume": "63",
+  "issue": "4",
+  "pages": "104634",
+  "type": "journal-article",
+  "doi": "10.1016/j.ipm.2026.104634",
+  "publisher": "Elsevier BV",
+  "source": "crossref"
+ },
+ "zhao2025words": {
+  "id": "10.1609/aaai.v39i1.32106",
+  "ok": true,
+  "title": "From Words to Worth: Newborn Article Impact Prediction with LLM",
+  "subtitle": null,
+  "authors": [
+   "Zhao, Penghai",
+   "Xing, Qinghua",
+   "Dou, Kairan",
+   "Tian, Jinyu",
+   "Tai, Ying",
+   "Yang, Jian",
+   "Cheng, Ming-Ming",
+   "Li, Xiang"
+  ],
+  "year": 2025,
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "volume": "39",
+  "issue": "1",
+  "pages": "1183-1191",
+  "type": "journal-article",
+  "doi": "10.1609/aaai.v39i1.32106",
+  "publisher": "Association for the Advancement of Artificial Intelligence (AAAI)",
+  "source": "crossref"
+ },
+ "kipf2017": {
+  "id": "1609.02907",
+  "ok": true,
+  "title": "Semi-Supervised Classification with Graph Convolutional Networks",
+  "authors": [
+   "Thomas N. Kipf",
+   "Max Welling"
+  ],
+  "year": 2017,
+  "venue": "5th International Conference on Learning Representations (ICLR 2017)",
+  "arxiv": "1609.02907",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "velickovic2018": {
+  "id": "1710.10903",
+  "ok": true,
+  "title": "Graph Attention Networks",
+  "authors": [
+   "Petar Veličković",
+   "Guillem Cucurull",
+   "Arantxa Casanova",
+   "Adriana Romero",
+   "Pietro Liò",
+   "Yoshua Bengio"
+  ],
+  "year": 2018,
+  "venue": "6th International Conference on Learning Representations (ICLR 2018)",
+  "arxiv": "1710.10903",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "brody2022": {
+  "id": "2105.14491",
+  "ok": true,
+  "title": "How Attentive are Graph Attention Networks?",
+  "authors": [
+   "Shaked Brody",
+   "Uri Alon",
+   "Eran Yahav"
+  ],
+  "year": 2022,
+  "venue": "10th International Conference on Learning Representations (ICLR 2022)",
+  "arxiv": "2105.14491",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "hamilton2017": {
+  "id": "1706.02216",
+  "ok": true,
+  "title": "Inductive Representation Learning on Large Graphs",
+  "authors": [
+   "William L. Hamilton",
+   "Rex Ying",
+   "Jure Leskovec"
+  ],
+  "year": 2017,
+  "venue": "Advances in Neural Information Processing Systems 30 (NIPS 2017)",
+  "arxiv": "1706.02216",
+  "source": "arxiv",
+  "pages": "1024-1034",
+  "overrides": [
+   "pages",
+   "venue",
+   "year"
+  ]
+ },
+ "schlichtkrull2018": {
+  "id": "10.1007/978-3-319-93417-4_38",
+  "ok": true,
+  "title": "Modeling Relational Data with Graph Convolutional Networks",
+  "subtitle": null,
+  "authors": [
+   "Schlichtkrull, Michael",
+   "Kipf, Thomas N.",
+   "Bloem, Peter",
+   "van den Berg, Rianne",
+   "Titov, Ivan",
+   "Welling, Max"
+  ],
+  "year": 2018,
+  "venue": "The Semantic Web. ESWC 2018. Lecture Notes in Computer Science, vol 10843",
+  "volume": null,
+  "issue": null,
+  "pages": "593-607",
+  "type": "book-chapter",
+  "doi": "10.1007/978-3-319-93417-4_38",
+  "publisher": "Springer International Publishing",
+  "source": "crossref",
+  "overrides": [
+   "venue"
+  ]
+ },
+ "wang2019han": {
+  "id": "10.1145/3308558.3313562",
+  "ok": true,
+  "title": "Heterogeneous Graph Attention Network",
+  "subtitle": null,
+  "authors": [
+   "Wang, Xiao",
+   "Ji, Houye",
+   "Shi, Chuan",
+   "Wang, Bai",
+   "Ye, Yanfang",
+   "Cui, Peng",
+   "Yu, Philip S"
+  ],
+  "year": 2019,
+  "venue": "The World Wide Web Conference",
+  "volume": null,
+  "issue": null,
+  "pages": "2022-2032",
+  "type": "proceedings-article",
+  "doi": "10.1145/3308558.3313562",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "hu2020hgt": {
+  "id": "10.1145/3366423.3380027",
+  "ok": true,
+  "title": "Heterogeneous Graph Transformer",
+  "subtitle": null,
+  "authors": [
+   "Hu, Ziniu",
+   "Dong, Yuxiao",
+   "Wang, Kuansan",
+   "Sun, Yizhou"
+  ],
+  "year": 2020,
+  "venue": "Proceedings of The Web Conference 2020",
+  "volume": null,
+  "issue": null,
+  "pages": "2704-2710",
+  "type": "proceedings-article",
+  "doi": "10.1145/3366423.3380027",
+  "publisher": "ACM",
+  "source": "crossref"
+ },
+ "hu2020ogb": {
+  "id": "2005.00687",
+  "ok": true,
+  "title": "Open Graph Benchmark: Datasets for Machine Learning on Graphs",
+  "authors": [
+   "Weihua Hu",
+   "Matthias Fey",
+   "Marinka Zitnik",
+   "Yuxiao Dong",
+   "Hongyu Ren",
+   "Bowen Liu",
+   "Michele Catasta",
+   "Jure Leskovec"
+  ],
+  "year": 2020,
+  "venue": "Advances in Neural Information Processing Systems 33 (NeurIPS 2020)",
+  "arxiv": "2005.00687",
+  "source": "arxiv",
+  "pages": "22118-22133",
+  "overrides": [
+   "pages",
+   "venue",
+   "year"
+  ]
+ },
+ "fey2019": {
+  "id": "1903.02428",
+  "ok": true,
+  "title": "Fast Graph Representation Learning with PyTorch Geometric",
+  "authors": [
+   "Matthias Fey",
+   "Jan Eric Lenssen"
+  ],
+  "year": 2019,
+  "venue": "ICLR 2019 Workshop on Representation Learning on Graphs and Manifolds",
+  "arxiv": "1903.02428",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "shchur2018": {
+  "id": "1811.05868",
+  "ok": true,
+  "title": "Pitfalls of Graph Neural Network Evaluation",
+  "authors": [
+   "Oleksandr Shchur",
+   "Maximilian Mumme",
+   "Aleksandar Bojchevski",
+   "Stephan Günnemann"
+  ],
+  "year": 2018,
+  "venue": "Relational Representation Learning Workshop (R2L 2018), NeurIPS 2018",
+  "arxiv": "1811.05868",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "huang2021cs": {
+  "id": "2010.13993",
+  "ok": true,
+  "title": "Combining Label Propagation and Simple Models Out-performs Graph Neural Networks",
+  "authors": [
+   "Qian Huang",
+   "Horace He",
+   "Abhay Singh",
+   "Ser-Nam Lim",
+   "Austin R. Benson"
+  ],
+  "year": 2021,
+  "venue": "9th International Conference on Learning Representations (ICLR 2021)",
+  "arxiv": "2010.13993",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "jain2019": {
+  "id": "10.18653/v1/N19-1357",
+  "ok": true,
+  "title": "Attention is not Explanation",
+  "subtitle": null,
+  "authors": [
+   "Jain, Sarthak",
+   "Wallace, Byron C."
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+  "volume": null,
+  "issue": null,
+  "pages": "3543-3556",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/n19-1357",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref"
+ },
+ "wiegreffe2019": {
+  "id": "10.18653/v1/D19-1002",
+  "ok": true,
+  "title": "Attention is not not Explanation",
+  "subtitle": null,
+  "authors": [
+   "Wiegreffe, Sarah",
+   "Pinter, Yuval"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "volume": null,
+  "issue": null,
+  "pages": "11-20",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/d19-1002",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref"
+ },
+ "ding2019dominant": {
+  "id": "10.1137/1.9781611975673.67",
+  "ok": true,
+  "title": "Deep Anomaly Detection on Attributed Networks",
+  "subtitle": null,
+  "authors": [
+   "Ding, Kaize",
+   "Li, Jundong",
+   "Bhanushali, Rohit",
+   "Liu, Huan"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 SIAM International Conference on Data Mining",
+  "volume": null,
+  "issue": null,
+  "pages": "594-602",
+  "type": "book-chapter",
+  "doi": "10.1137/1.9781611975673.67",
+  "publisher": "Society for Industrial and Applied Mathematics",
+  "source": "crossref"
+ },
+ "kipf2016vgae": {
+  "id": "1611.07308",
+  "ok": true,
+  "title": "Variational Graph Auto-Encoders",
+  "authors": [
+   "Thomas N. Kipf",
+   "Max Welling"
+  ],
+  "year": 2016,
+  "venue": "NIPS 2016 Workshop on Bayesian Deep Learning",
+  "arxiv": "1611.07308",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "liu2008iforest": {
+  "id": "10.1109/ICDM.2008.17",
+  "ok": true,
+  "title": "Isolation Forest",
+  "subtitle": null,
+  "authors": [
+   "Liu, Fei Tony",
+   "Ting, Kai Ming",
+   "Zhou, Zhi-Hua"
+  ],
+  "year": 2008,
+  "venue": "2008 Eighth IEEE International Conference on Data Mining",
+  "volume": null,
+  "issue": null,
+  "pages": "413-422",
+  "type": "proceedings-article",
+  "doi": "10.1109/icdm.2008.17",
+  "publisher": "IEEE",
+  "source": "crossref"
+ },
+ "ma2021survey": {
+  "id": "10.1109/TKDE.2021.3118815",
+  "ok": true,
+  "title": "A Comprehensive Survey on Graph Anomaly Detection With Deep Learning",
+  "subtitle": null,
+  "authors": [
+   "Ma, Xiaoxiao",
+   "Wu, Jia",
+   "Xue, Shan",
+   "Yang, Jian",
+   "Zhou, Chuan",
+   "Sheng, Quan Z.",
+   "Xiong, Hui",
+   "Akoglu, Leman"
+  ],
+  "year": 2023,
+  "venue": "IEEE Transactions on Knowledge and Data Engineering",
+  "volume": "35",
+  "issue": "12",
+  "pages": "12012-12038",
+  "type": "journal-article",
+  "doi": "10.1109/tkde.2021.3118815",
+  "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+  "source": "crossref"
+ },
+ "liu2022bond": {
+  "id": "2206.10071",
+  "ok": true,
+  "title": "BOND: Benchmarking Unsupervised Outlier Node Detection on Static Attributed Graphs",
+  "authors": [
+   "Kay Liu",
+   "Yingtong Dou",
+   "Yue Zhao",
+   "Xueying Ding",
+   "Xiyang Hu",
+   "Ruitong Zhang",
+   "Kaize Ding",
+   "Canyu Chen",
+   "Hao Peng",
+   "Kai Shu",
+   "Lichao Sun",
+   "Jundong Li",
+   "George H. Chen",
+   "Zhihao Jia",
+   "Philip S. Yu"
+  ],
+  "year": 2022,
+  "venue": "Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Datasets and Benchmarks Track",
+  "arxiv": "2206.10071",
+  "source": "arxiv",
+  "pages": "27021-27035",
+  "overrides": [
+   "pages",
+   "venue",
+   "year"
+  ]
+ },
+ "fister2016": {
+  "id": "10.3389/fphy.2016.00049",
+  "ok": true,
+  "title": "Toward the Discovery of Citation Cartels in Citation Networks",
+  "subtitle": null,
+  "authors": [
+   "Fister, Iztok",
+   "Fister, Iztok",
+   "Perc, Matjaž"
+  ],
+  "year": 2016,
+  "venue": "Frontiers in Physics",
+  "volume": "4",
+  "issue": null,
+  "pages": "49",
+  "type": "journal-article",
+  "doi": "10.3389/fphy.2016.00049",
+  "publisher": "Frontiers Media SA",
+  "source": "crossref",
+  "overrides": [
+   "pages"
+  ]
+ },
+ "kojaku2021": {
+  "id": "10.1038/s41598-021-93572-3",
+  "ok": true,
+  "title": "Detecting anomalous citation groups in journal networks",
+  "subtitle": null,
+  "authors": [
+   "Kojaku, Sadamori",
+   "Livan, Giacomo",
+   "Masuda, Naoki"
+  ],
+  "year": 2021,
+  "venue": "Scientific Reports",
+  "volume": "11",
+  "issue": "1",
+  "pages": "14524",
+  "type": "journal-article",
+  "doi": "10.1038/s41598-021-93572-3",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "heneberg2016": {
+  "id": "10.1371/journal.pone.0153730",
+  "ok": true,
+  "title": "From Excessive Journal Self-Cites to Citation Stacking: Analysis of Journal Self-Citation Kinetics in Search for Journals, Which Boost Their Scientometric Indicators",
+  "subtitle": null,
+  "authors": [
+   "Heneberg, Petr"
+  ],
+  "year": 2016,
+  "venue": "PLOS ONE",
+  "volume": "11",
+  "issue": "4",
+  "pages": "e0153730",
+  "type": "journal-article",
+  "doi": "10.1371/journal.pone.0153730",
+  "publisher": "Public Library of Science (PLoS)",
+  "source": "crossref"
+ },
+ "vannoorden2019": {
+  "id": "10.1038/d41586-019-02479-7",
+  "ok": true,
+  "title": "Hundreds of extreme self-citing scientists revealed in new database",
+  "subtitle": null,
+  "authors": [
+   "Van Noorden, Richard",
+   "Singh Chawla, Dalmeet"
+  ],
+  "year": 2019,
+  "venue": "Nature",
+  "volume": "572",
+  "issue": "7771",
+  "pages": "578-579",
+  "type": "journal-article",
+  "doi": "10.1038/d41586-019-02479-7",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "ioannidis2019": {
+  "id": "10.1371/journal.pbio.3000384",
+  "ok": true,
+  "title": "A standardized citation metrics author database annotated for scientific field",
+  "subtitle": null,
+  "authors": [
+   "Ioannidis, John P. A.",
+   "Baas, Jeroen",
+   "Klavans, Richard",
+   "Boyack, Kevin W."
+  ],
+  "year": 2019,
+  "venue": "PLOS Biology",
+  "volume": "17",
+  "issue": "8",
+  "pages": "e3000384",
+  "type": "journal-article",
+  "doi": "10.1371/journal.pbio.3000384",
+  "publisher": "Public Library of Science (PLoS)",
+  "source": "crossref"
+ },
+ "devlin2019": {
+  "id": "10.18653/v1/N19-1423",
+  "ok": true,
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "subtitle": null,
+  "authors": [
+   "Devlin, Jacob",
+   "Chang, Ming-Wei",
+   "Lee, Kenton",
+   "Toutanova, Kristina"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)",
+  "volume": null,
+  "issue": null,
+  "pages": "4171-4186",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/n19-1423",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref"
+ },
+ "beltagy2019": {
+  "id": "10.18653/v1/D19-1371",
+  "ok": true,
+  "title": "SciBERT: A Pretrained Language Model for Scientific Text",
+  "subtitle": null,
+  "authors": [
+   "Beltagy, Iz",
+   "Lo, Kyle",
+   "Cohan, Arman"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "volume": null,
+  "issue": null,
+  "pages": "3615-3620",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/d19-1371",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref",
+  "overrides": [
+   "pages"
+  ]
+ },
+ "cohan2020": {
+  "id": "10.18653/v1/2020.acl-main.207",
+  "ok": true,
+  "title": "SPECTER: Document-level Representation Learning using Citation-informed Transformers",
+  "subtitle": null,
+  "authors": [
+   "Cohan, Arman",
+   "Feldman, Sergey",
+   "Beltagy, Iz",
+   "Downey, Doug",
+   "Weld, Daniel"
+  ],
+  "year": 2020,
+  "venue": "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics",
+  "volume": null,
+  "issue": null,
+  "pages": "2270-2282",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/2020.acl-main.207",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref"
+ },
+ "reimers2019": {
+  "id": "10.18653/v1/D19-1410",
+  "ok": true,
+  "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+  "subtitle": null,
+  "authors": [
+   "Reimers, Nils",
+   "Gurevych, Iryna"
+  ],
+  "year": 2019,
+  "venue": "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)",
+  "volume": null,
+  "issue": null,
+  "pages": "3982-3992",
+  "type": "proceedings-article",
+  "doi": "10.18653/v1/d19-1410",
+  "publisher": "Association for Computational Linguistics",
+  "source": "crossref",
+  "overrides": [
+   "pages"
+  ]
+ },
+ "chien2022giant": {
+  "id": "2111.00064",
+  "ok": true,
+  "title": "Node Feature Extraction by Self-Supervised Multi-scale Neighborhood Prediction",
+  "authors": [
+   "Eli Chien",
+   "Wei-Cheng Chang",
+   "Cho-Jui Hsieh",
+   "Hsiang-Fu Yu",
+   "Jiong Zhang",
+   "Olgica Milenkovic",
+   "Inderjit S Dhillon"
+  ],
+  "year": 2022,
+  "venue": "10th International Conference on Learning Representations (ICLR 2022)",
+  "arxiv": "2111.00064",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "priem2022": {
+  "id": "2205.01833",
+  "ok": true,
+  "title": "OpenAlex: A fully-open index of scholarly works, authors, venues, institutions, and concepts",
+  "authors": [
+   "Jason Priem",
+   "Heather Piwowar",
+   "Richard Orr"
+  ],
+  "year": 2022,
+  "venue": "arXiv preprint arXiv:2205.01833",
+  "arxiv": "2205.01833",
+  "source": "arxiv"
+ },
+ "wang2020mag": {
+  "id": "10.1162/qss_a_00021",
+  "ok": true,
+  "title": "Microsoft Academic Graph: When experts are not enough",
+  "subtitle": null,
+  "authors": [
+   "Wang, Kuansan",
+   "Shen, Zhihong",
+   "Huang, Chiyuan",
+   "Wu, Chieh-Han",
+   "Dong, Yuxiao",
+   "Kanakia, Anshul"
+  ],
+  "year": 2020,
+  "venue": "Quantitative Science Studies",
+  "volume": "1",
+  "issue": "1",
+  "pages": "396-413",
+  "type": "journal-article",
+  "doi": "10.1162/qss_a_00021",
+  "publisher": "MIT Press",
+  "source": "crossref"
+ },
+ "visser2021": {
+  "id": "10.1162/qss_a_00112",
+  "ok": true,
+  "title": "Large-scale comparison of bibliographic data sources: Scopus, Web of\n                    Science, Dimensions, Crossref, and Microsoft Academic",
+  "subtitle": null,
+  "authors": [
+   "Visser, Martijn",
+   "van Eck, Nees Jan",
+   "Waltman, Ludo"
+  ],
+  "year": 2021,
+  "venue": "Quantitative Science Studies",
+  "volume": "2",
+  "issue": "1",
+  "pages": "20-41",
+  "type": "journal-article",
+  "doi": "10.1162/qss_a_00112",
+  "publisher": "MIT Press",
+  "source": "crossref"
+ },
+ "culbert2025": {
+  "id": "10.1007/s11192-025-05293-3",
+  "ok": true,
+  "title": "Reference coverage analysis of OpenAlex compared to Web of Science and Scopus",
+  "subtitle": null,
+  "authors": [
+   "Culbert, Jack H.",
+   "Hobert, Anne",
+   "Jahn, Najko",
+   "Haupka, Nick",
+   "Schmidt, Marion",
+   "Donner, Paul",
+   "Mayr, Philipp"
+  ],
+  "year": 2025,
+  "venue": "Scientometrics",
+  "volume": "130",
+  "issue": "4",
+  "pages": "2475-2492",
+  "type": "journal-article",
+  "doi": "10.1007/s11192-025-05293-3",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "peng2025leakage": {
+  "id": "2510.25348",
+  "ok": true,
+  "title": "From Leakage to Fidelity: Reliable Benchmarking for Temporal Cascade Prediction",
+  "authors": [
+   "Jie Peng",
+   "Rui Wang",
+   "Qiang Wang",
+   "Zhewei Wei",
+   "Bin Tong",
+   "Guan Wang",
+   "Bo Zheng"
+  ],
+  "year": 2025,
+  "venue": "arXiv preprint arXiv:2510.25348",
+  "arxiv": "2510.25348",
+  "source": "arxiv"
+ },
+ "poursafaei2022": {
+  "id": "2207.10128",
+  "ok": true,
+  "title": "Towards Better Evaluation for Dynamic Link Prediction",
+  "authors": [
+   "Farimah Poursafaei",
+   "Shenyang Huang",
+   "Kellin Pelrine",
+   "Reihaneh Rabbany"
+  ],
+  "year": 2022,
+  "venue": "Advances in Neural Information Processing Systems 35 (NeurIPS 2022), Datasets and Benchmarks Track",
+  "arxiv": "2207.10128",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "huang2023tgb": {
+  "id": "2307.01026",
+  "ok": true,
+  "title": "Temporal Graph Benchmark for Machine Learning on Temporal Graphs",
+  "authors": [
+   "Shenyang Huang",
+   "Farimah Poursafaei",
+   "Jacob Danovitch",
+   "Matthias Fey",
+   "Weihua Hu",
+   "Emanuele Rossi",
+   "Jure Leskovec",
+   "Michael Bronstein",
+   "Guillaume Rabusseau",
+   "Reihaneh Rabbany"
+  ],
+  "year": 2023,
+  "venue": "Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track",
+  "arxiv": "2307.01026",
+  "source": "arxiv",
+  "overrides": [
+   "venue",
+   "year"
+  ]
+ },
+ "nadeau2003": {
+  "id": "10.1023/A:1024068626366",
+  "ok": true,
+  "title": "Inference for the Generalization Error",
+  "subtitle": null,
+  "authors": [
+   "Nadeau, Claude",
+   "Bengio, Yoshua"
+  ],
+  "year": 2003,
+  "venue": "Machine Learning",
+  "volume": "52",
+  "issue": "3",
+  "pages": "239-281",
+  "type": "journal-article",
+  "doi": "10.1023/a:1024068626366",
+  "publisher": "Springer Science and Business Media LLC",
+  "source": "crossref"
+ },
+ "bouckaert2004": {
+  "id": "10.1007/978-3-540-24775-3_3",
+  "ok": true,
+  "title": "Evaluating the Replicability of Significance Tests for Comparing Learning Algorithms",
+  "subtitle": null,
+  "authors": [
+   "Bouckaert, Remco R.",
+   "Frank, Eibe"
+  ],
+  "year": 2004,
+  "venue": "Advances in Knowledge Discovery and Data Mining. Lecture Notes in Computer Science",
+  "volume": null,
+  "issue": null,
+  "pages": "3-12",
+  "type": "book-chapter",
+  "doi": "10.1007/978-3-540-24775-3_3",
+  "publisher": "Springer Berlin Heidelberg",
+  "source": "crossref",
+  "overrides": [
+   "venue"
+  ]
+ }
+}

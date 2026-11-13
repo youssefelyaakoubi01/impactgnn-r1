@@ -1,0 +1,49 @@
+topic_id,topic,group,field,n_labelled,n_2022,median_citations_3y,top10_rate,n_top10,median_in_graph_refs,mean_coverage,share_no_in_graph_ref
+T11504,Advanced Authentication Protocols Security,lab,Computer Science,250,55,9.0,0.13199999928474426,33,14.0,0.43316837311257184,0.048
+T11814,Advanced Manufacturing and Logistics Optimization,lab,Engineering,250,47,6.0,0.0560000017285347,14,12.0,0.4312353249857105,0.044
+T10036,Advanced Neural Network Applications,lab,Computer Science,250,94,8.0,0.10400000214576721,26,12.0,0.3597139874711004,0.032
+T11443,Advanced Statistical Process Monitoring,lab,Decision Sciences,250,52,4.0,0.012000000104308128,3,13.0,0.4229902802020564,0.024
+T13904,Artificial Intelligence Applications,lab,Computer Science,250,61,6.0,0.2160000056028366,54,5.0,0.2437721302628168,0.136
+T10270,Blockchain Technology Applications and Security,lab,Computer Science,250,106,15.0,0.24400000274181366,61,8.0,0.3514882732985387,0.052
+T13373,Data Mining and Machine Learning Applications,lab,Computer Science,250,86,2.0,0.01600000075995922,4,2.0,0.19435209872076892,0.196
+T11734,Decision Support System Applications,lab,"Business, Management and Accounting",250,79,1.0,0.004000000189989805,1,1.0,0.1597810135177354,0.28
+T10763,Digital Transformation in Industry,lab,Engineering,250,61,13.5,0.25999999046325684,65,9.0,0.3398131342010396,0.04
+T10876,Fault Detection and Control Systems,lab,Engineering,250,50,8.0,0.07599999755620956,19,10.0,0.33457488783345696,0.028
+T14260,Impact of AI and Big Data on Business and Society,lab,Decision Sciences,250,95,12.0,0.2800000011920929,70,7.0,0.29220762487057156,0.068
+T12080,Injection Molding Process and Properties,lab,Engineering,250,45,5.0,0.024000000208616257,6,6.0,0.31352274936551355,0.092
+T10246,Mobile Ad Hoc Networks,lab,Computer Science,250,41,3.0,0.0560000017285347,14,6.0,0.2970231848349614,0.012
+T11450,Model-Driven Software Engineering Techniques,lab,Computer Science,250,34,3.5,0.024000000208616257,6,9.0,0.29016578886813166,0.04
+T10050,Multi-Criteria Decision Making,lab,Decision Sciences,250,44,8.5,0.15199999511241913,38,11.0,0.2892231716469922,0.036
+T10780,Reliability and Maintenance Optimization,lab,Engineering,250,47,5.0,0.052000001072883606,13,6.0,0.26504990803302364,0.06
+T11357,Risk and Safety Analysis,lab,Decision Sciences,250,47,8.0,0.04800000041723251,12,8.0,0.30069978918653906,0.076
+T11498,Security in Wireless Sensor Networks,lab,Computer Science,250,46,6.5,0.07999999821186066,20,9.0,0.37191133040413005,0.012
+T10215,Semantic Web and Ontologies,lab,Computer Science,250,40,3.0,0.019999999552965164,5,5.0,0.23681466901608056,0.06
+T11326,Stock Market Forecasting Methods,lab,Decision Sciences,250,70,9.0,0.14800000190734863,37,10.0,0.36707003542919187,0.04
+T10328,Supply Chain and Inventory Management,lab,"Business, Management and Accounting",250,49,8.0,0.05999999865889549,15,10.0,0.27932899191944494,0.02
+T10524,Traffic control and management,lab,Engineering,250,53,6.5,0.04800000041723251,12,8.0,0.3332479038493823,0.032
+T10761,Vehicular Ad Hoc Networks (VANETs),lab,Engineering,250,45,9.0,0.12800000607967377,32,11.0,0.3986421589299475,0.02
+T10102,scientometrics and bibliometrics research,lab,Decision Sciences,250,53,5.0,0.05999999865889549,15,6.0,0.22353581923349847,0.068
+T10845,Advanced Causal Inference Techniques,open,Mathematics,250,56,7.0,0.1080000028014183,27,15.0,0.4479772605877955,0.02
+T11458,Advanced Wireless Communication Technologies,open,Engineering,250,88,17.0,0.31200000643730164,78,14.0,0.5124274205422481,0.0
+T10127,"Banking stability, regulation, efficiency",open,"Economics, Econometrics and Finance",250,43,3.0,0.02800000086426735,7,10.0,0.2947182573501498,0.068
+T10168,COVID-19 and Mental Health,open,Psychology,250,84,9.0,0.1599999964237213,40,6.0,0.23829387967277746,0.052
+T10029,Climate variability and models,open,Environmental Science,250,42,10.5,0.1120000034570694,28,14.0,0.3134231567155856,0.016
+T11270,Complex Systems and Time Series Analysis,open,"Economics, Econometrics and Finance",250,37,5.0,0.04399999976158142,11,17.0,0.4177948972395062,0.012
+T10021,EFL/ESL Teaching and Learning,open,Arts and Humanities,250,50,1.0,0.012000000104308128,3,3.0,0.17906552064351117,0.144
+T14309,Employee Performance and Management,open,Social Sciences,250,88,1.0,0.012000000104308128,3,2.0,0.16938486886486878,0.184
+T10282,Financial Risk and Volatility Modeling,open,"Economics, Econometrics and Finance",250,50,4.0,0.06400000303983688,16,14.0,0.4278900242170861,0.008
+T10241,Functional Brain Connectivity Studies,open,Neuroscience,250,51,12.0,0.1080000028014183,27,22.0,0.3831673808036705,0.0
+T10621,Gene Regulatory Network Analysis,open,"Biochemistry, Genetics and Molecular Biology",250,43,6.0,0.06800000369548798,17,15.0,0.33901474293798506,0.0
+T10066,Gut microbiota and health,open,"Biochemistry, Genetics and Molecular Biology",250,68,17.0,0.2240000069141388,56,15.5,0.313011718323879,0.008
+T10399,Hydrocarbon exploration and reservoir analysis,open,Engineering,250,44,7.0,0.02800000086426735,7,10.0,0.2726423438447667,0.08
+T12336,Insect Utilization and Effects,open,Agricultural and Biological Sciences,250,70,14.0,0.21199999749660492,53,18.0,0.4813275043187609,0.0
+T10245,Metamaterials and Metasurfaces Applications,open,Materials Science,250,62,10.0,0.17599999904632568,44,13.0,0.35263668126259745,0.032
+T10007,Monetary Policy and Economic Impact,open,"Economics, Econometrics and Finance",250,39,3.0,0.04399999976158142,11,9.0,0.27623270395336735,0.068
+T11714,Multimodal Machine Learning Applications,open,Computer Science,250,82,10.0,0.1599999964237213,40,29.0,0.6462635596427196,0.0
+T10079,Nanoparticles: synthesis and applications,open,Materials Science,250,54,13.0,0.20000000298023224,50,8.0,0.20175670136265353,0.024
+T10972,Power Systems Fault Detection,open,Engineering,250,45,9.0,0.0560000017285347,14,7.0,0.3245842662345719,0.068
+T10020,Quantum Information and Cryptography,open,Computer Science,250,41,7.0,0.08399999886751175,21,15.0,0.3806847782790014,0.004
+T10118,SARS-CoV-2 and COVID-19 Research,open,Medicine,250,112,14.5,0.2639999985694885,66,7.0,0.2568329729709393,0.072
+T10004,Soil Carbon and Nitrogen Dynamics,open,Agricultural and Biological Sciences,250,58,11.5,0.14000000059604645,35,11.0,0.24310291833306366,0.012
+T10136,Statistical Methods and Inference,open,Mathematics,250,54,3.0,0.04800000041723251,12,12.0,0.408500185790498,0.004
+T11152,Stochastic processes and statistical mechanics,open,Mathematics,250,45,3.0,0.012000000104308128,3,6.0,0.2751362022881788,0.024

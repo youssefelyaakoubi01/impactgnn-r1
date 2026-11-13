@@ -1,0 +1,13 @@
+{
+ "python": "3.12.7",
+ "platform": "Linux-5.15.0-202-generic-x86_64-with-glibc2.35",
+ "torch": "2.14.1+cu130",
+ "cuda": "13.0",
+ "cudnn": 92400,
+ "torch_geometric": "2.8.1",
+ "gpu": "NVIDIA RTX A4500",
+ "commit": "6a5a1f4d95e1cbbc6e16710a3e9822b5273d8838",
+ "tags": [
+  "v3-revision"
+ ]
+}

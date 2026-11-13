@@ -1,0 +1,1430 @@
+{
+ "summary": {
+  "k3": {
+   "mlp": {
+    "spearman": {
+     "mean": 0.3601583057709796,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.05080771446228027,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8769749402999878,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "mlp_refagg": {
+    "spearman": {
+     "mean": 0.37065562827511905,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.08327126502990723,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8626787066459656,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage": {
+    "spearman": {
+     "mean": 0.3863140362320843,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.12427252531051636,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8511546850204468,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage_e": {
+    "spearman": {
+     "mean": 0.3640899099320245,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.11588531732559204,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8552331924438477,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat": {
+    "spearman": {
+     "mean": 0.3942521346896857,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.09156876802444458,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.886494517326355,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat_e": {
+    "spearman": {
+     "mean": 0.3677342652487403,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.08437597751617432,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8917204737663269,
+     "std": 0.0,
+     "n": 1
+    }
+   }
+  },
+  "k5": {
+   "mlp": {
+    "spearman": {
+     "mean": 0.36598583744368485,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.03600478172302246,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8728178143501282,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "mlp_refagg": {
+    "spearman": {
+     "mean": 0.3028348565301557,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.09061181545257568,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8648830652236938,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage": {
+    "spearman": {
+     "mean": 0.3437738843177055,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.07123559713363647,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8553656935691833,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage_e": {
+    "spearman": {
+     "mean": 0.33249948800745543,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.03872150182723999,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.9041244387626648,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat": {
+    "spearman": {
+     "mean": 0.4144520506248371,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.13535255193710327,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8349560499191284,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat_e": {
+    "spearman": {
+     "mean": 0.3748943010135333,
+     "std": 0.0,
+     "n": 1
+    },
+    "r2": {
+     "mean": 0.08939868211746216,
+     "std": 0.0,
+     "n": 1
+    },
+    "mae": {
+     "mean": 0.8501455187797546,
+     "std": 0.0,
+     "n": 1
+    }
+   }
+  }
+ },
+ "examples": [
+  {
+   "title": "Using Synthetic Controls: Feasibility, Data Requirements, and Methodological Aspects",
+   "year": 2021,
+   "venue": "Journal of Economic Literature",
+   "citations_3y": 828,
+   "n_refs_in_graph": 34,
+   "top3": [
+    {
+     "title": "Examination of the Synthetic Control Method for Evaluating Health Policies with Multiple Treated Units",
+     "year": 2015,
+     "citations_before_citing_year": 115,
+     "attention": 0.0370493084192276,
+     "uniform": 0.029411764705882353
+    },
+    {
+     "title": "Statistics and Causal Inference",
+     "year": 1986,
+     "citations_before_citing_year": 3736,
+     "attention": 0.03506619483232498,
+     "uniform": 0.029411764705882353
+    },
+    {
+     "title": "Semiparametric Difference-in-Differences Estimators",
+     "year": 2004,
+     "citations_before_citing_year": 1050,
+     "attention": 0.034975141286849976,
+     "uniform": 0.029411764705882353
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Credible Research Designs for Minimum Wage Studies",
+     "year": 2017,
+     "citations_before_citing_year": 106,
+     "attention": 0.020573031157255173,
+     "uniform": 0.029411764705882353
+    },
+    {
+     "title": "Generalized Synthetic Control Method: Causal Inference with Interactive Fixed Effects Models",
+     "year": 2017,
+     "citations_before_citing_year": 170,
+     "attention": 0.02284441515803337,
+     "uniform": 0.029411764705882353
+    },
+    {
+     "title": "The Economic Costs of Conflict: A Case Study of the Basque Country",
+     "year": 2003,
+     "citations_before_citing_year": 2094,
+     "attention": 0.02368035539984703,
+     "uniform": 0.029411764705882353
+    }
+   ]
+  },
+  {
+   "title": "Comparison of Propensity Score Methods and Covariate Adjustment",
+   "year": 2017,
+   "venue": "Journal of the American College of Cardiology",
+   "citations_3y": 194,
+   "n_refs_in_graph": 16,
+   "top3": [
+    {
+     "title": "Design of Experiments",
+     "year": 1936,
+     "citations_before_citing_year": 3722,
+     "attention": 0.07151012122631073,
+     "uniform": 0.0625
+    },
+    {
+     "title": "Reducing Bias in Observational Studies Using Subclassification on the Propensity Score",
+     "year": 1984,
+     "citations_before_citing_year": 2363,
+     "attention": 0.07036670297384262,
+     "uniform": 0.0625
+    },
+    {
+     "title": "Reducing Bias in Observational Studies Using Subclassification on the Propensity Score",
+     "year": 1984,
+     "citations_before_citing_year": 1649,
+     "attention": 0.07011234015226364,
+     "uniform": 0.0625
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Effects of Adjusting for Instrumental Variables on Bias and Precision of Effect Estimates",
+     "year": 2011,
+     "citations_before_citing_year": 95,
+     "attention": 0.04924257472157478,
+     "uniform": 0.0625
+    },
+    {
+     "title": "Demystifying Double Robustness: A Comparison of Alternative Strategies for Estimating a Population Mean from Incomplete Data (with discussion)",
+     "year": 2007,
+     "citations_before_citing_year": 202,
+     "attention": 0.053768228739500046,
+     "uniform": 0.0625
+    },
+    {
+     "title": "An overview of the objectives of and the approaches to propensity score analyses",
+     "year": 2011,
+     "citations_before_citing_year": 139,
+     "attention": 0.05457775294780731,
+     "uniform": 0.0625
+    }
+   ]
+  },
+  {
+   "title": "The sound of silence: Transgene silencing in mammalian cell engineering",
+   "year": 2022,
+   "venue": "Cell Systems",
+   "citations_3y": 141,
+   "n_refs_in_graph": 14,
+   "top3": [
+    {
+     "title": "Establishment of HIV-1 resistance in CD4+ T cells by genome editing using zinc-finger nucleases",
+     "year": 2008,
+     "citations_before_citing_year": 903,
+     "attention": 0.07402366399765015,
+     "uniform": 0.07142857142857142
+    },
+    {
+     "title": "Epigenome editing by a CRISPR-Cas9-based acetyltransferase activates genes from promoters and enhancers",
+     "year": 2015,
+     "citations_before_citing_year": 1183,
+     "attention": 0.0724695548415184,
+     "uniform": 0.07142857142857142
+    },
+    {
+     "title": "Dynamics and Memory of Heterochromatin in Living Cells",
+     "year": 2012,
+     "citations_before_citing_year": 314,
+     "attention": 0.0721779465675354,
+     "uniform": 0.07142857142857142
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Chromatin Modifications and Their Function",
+     "year": 2007,
+     "citations_before_citing_year": 8981,
+     "attention": 0.055366452783346176,
+     "uniform": 0.07142857142857142
+    },
+    {
+     "title": "An integrated encyclopedia of DNA elements in the human genome",
+     "year": 2012,
+     "citations_before_citing_year": 12379,
+     "attention": 0.06076211854815483,
+     "uniform": 0.07142857142857142
+    },
+    {
+     "title": "A multi-landing pad DNA integration platform for mammalian cell engineering",
+     "year": 2018,
+     "citations_before_citing_year": 62,
+     "attention": 0.06300351768732071,
+     "uniform": 0.07142857142857142
+    }
+   ]
+  },
+  {
+   "title": "Chemically induced proximity in biology and medicine",
+   "year": 2018,
+   "venue": "Science",
+   "citations_3y": 129,
+   "n_refs_in_graph": 18,
+   "top3": [
+    {
+     "title": "Dynamics of BAF\u2013Polycomb complex opposition on heterochromatin in normal and oncogenic states",
+     "year": 2016,
+     "citations_before_citing_year": 27,
+     "attention": 0.06723526120185852,
+     "uniform": 0.05555555555555555
+    },
+    {
+     "title": "Phthalimide conjugation as a strategy for in vivo target protein degradation",
+     "year": 2015,
+     "citations_before_citing_year": 198,
+     "attention": 0.06439836323261261,
+     "uniform": 0.05555555555555555
+    },
+    {
+     "title": "Dynamics and Memory of Heterochromatin in Living Cells",
+     "year": 2012,
+     "citations_before_citing_year": 191,
+     "attention": 0.06173105165362358,
+     "uniform": 0.05555555555555555
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Dimeric ligands define a role for transcriptional activation domains in reinitiation",
+     "year": 1996,
+     "citations_before_citing_year": 205,
+     "attention": 0.041949689388275146,
+     "uniform": 0.05555555555555555
+    },
+    {
+     "title": "Manipulation of nuclear architecture through CRISPR-mediated chromosomal looping",
+     "year": 2017,
+     "citations_before_citing_year": 6,
+     "attention": 0.04249038174748421,
+     "uniform": 0.05555555555555555
+    },
+    {
+     "title": "Complex transcriptional modulation with orthogonal and inducible dCas9 regulators",
+     "year": 2016,
+     "citations_before_citing_year": 35,
+     "attention": 0.0444812998175621,
+     "uniform": 0.05555555555555555
+    }
+   ]
+  },
+  {
+   "title": "Locally Robust Semiparametric Estimation",
+   "year": 2022,
+   "venue": "Econometrica",
+   "citations_3y": 99,
+   "n_refs_in_graph": 31,
+   "top3": [
+    {
+     "title": "Targeted Learning",
+     "year": 2011,
+     "citations_before_citing_year": 368,
+     "attention": 0.04422350227832794,
+     "uniform": 0.03225806451612903
+    },
+    {
+     "title": "Optimal Replacement of GMC Bus Engines: An Empirical Model of Harold Zurcher",
+     "year": 1987,
+     "citations_before_citing_year": 1446,
+     "attention": 0.03962909057736397,
+     "uniform": 0.03225806451612903
+    },
+    {
+     "title": "Twicing Kernels and a Small Bias Property of Semiparametric Estimators",
+     "year": 2004,
+     "citations_before_citing_year": 80,
+     "attention": 0.03841748461127281,
+     "uniform": 0.03225806451612903
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Efficient and Adaptive Estimation for Semiparametric Models.",
+     "year": 1994,
+     "citations_before_citing_year": 1333,
+     "attention": 0.024577032774686813,
+     "uniform": 0.03225806451612903
+    },
+    {
+     "title": "Conditional Choice Probabilities and the Estimation of Dynamic Models",
+     "year": 1993,
+     "citations_before_citing_year": 809,
+     "attention": 0.024895034730434418,
+     "uniform": 0.03225806451612903
+    },
+    {
+     "title": "De-biased Machine Learning in Instrumental Variable Models for Treatment Effects",
+     "year": 2019,
+     "citations_before_citing_year": 6,
+     "attention": 0.025861652567982674,
+     "uniform": 0.03225806451612903
+    }
+   ]
+  }
+ ],
+ "attention": {
+  "gat|k3": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": 0.01588028744870627,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.5510204081632653,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.046724226103191345,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5714285714285714,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.03915759536455219,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.09091736893528674,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": -0.07664656236640371,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.4489795918367347,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": -0.023451472156305452,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5102040816326531,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": -0.06940982860962283,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.015207040207535985,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": 0.2684491788761058,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.7346938775510204,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.30926721861460593,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.7959183673469388,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.23582762062166085,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.2949352779223901,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.5549449920654297,
+    "std": 0.0,
+    "n": 1
+   }
+  },
+  "gat|k5": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": 0.05589704286703441,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.6,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.008192846116910539,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.10420588457591186,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.13359554912883306,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": -0.05452607799378064,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.4666666666666667,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": -0.05166339449400895,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": -0.0034784477767872486,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.05836979939921424,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": 0.33942895726882766,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.8666666666666667,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.36882426714977357,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.9333333333333333,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.3624981096074435,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.38939565879662136,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.48221608996391296,
+    "std": 0.0,
+    "n": 1
+   }
+  },
+  "gat_e|k3": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": 0.6082242305090466,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.9387755102040817,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.5014170718648093,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.9183673469387755,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.5757013882456022,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.5112625129374093,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": 0.11972213098814191,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.6326530612244898,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.05613715422553505,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6122448979591837,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.12304533684195916,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.14264494799550861,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": 0.4941658915089666,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.8775510204081632,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.5926713056479468,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.8979591836734694,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.5267741443605127,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.6107998772837834,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 49.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.5487397909164429,
+    "std": 0.0,
+    "n": 1
+   }
+  },
+  "gat_e|k5": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": 0.6484044791490085,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.9666666666666667,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.5262971000414094,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.9333333333333333,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.6105907817236558,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.5531263011111363,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": 0.13606919733532688,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.6666666666666666,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.08532624551586727,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6333333333333333,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.18318704713650322,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.1530311614415002,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": 0.5378103226433777,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.8666666666666667,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_mean": {
+     "mean": 0.5673280707698324,
+     "std": 0.0,
+     "n": 1
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.8333333333333334,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_cit": {
+     "mean": 0.571140097906881,
+     "std": 0.0,
+     "n": 1
+    },
+    "pooled_age": {
+     "mean": 0.6027979264401719,
+     "std": 0.0,
+     "n": 1
+    },
+    "n_targets": {
+     "mean": 30.0,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.4609747529029846,
+    "std": 0.0,
+    "n": 1
+   }
+  }
+ },
+ "exp": 1,
+ "profile": "small",
+ "device": "cuda",
+ "gpu": "NVIDIA RTX A4500",
+ "workers": 1,
+ "wall_time_s": 5.3,
+ "config": {
+  "profile": "small",
+  "t0": 2017,
+  "sample_years": [
+   2017,
+   2022
+  ],
+  "last_complete_year": 2025,
+  "cby_first_year": 2012,
+  "horizons": [
+   3,
+   5
+  ],
+  "label_inclusive": true,
+  "top_share": 0.1,
+  "coldstart_test_start": {
+   "3": 2021,
+   "5": 2020
+  },
+  "seeds": [
+   0
+  ],
+  "split": [
+   0.7,
+   0.15,
+   0.15
+  ],
+  "n_lab_topics": 2,
+  "n_open_topics": 2,
+  "papers_per_topic": 100,
+  "sample_seed": 20261024,
+  "refs_of_open_seeds": false,
+  "max_paper_nodes": 5000,
+  "min_ref_citers": 2,
+  "workers": 4,
+  "min_interval": 0.12,
+  "budget_reserve": 150,
+  "title_threshold": 90.0,
+  "max_title_searches": 5,
+  "default_text": "specter",
+  "embed_batch": 256,
+  "embed_max_len": 320,
+  "device": "cuda",
+  "hidden": 128,
+  "heads": 4,
+  "dropout": 0.3,
+  "lr": 0.003,
+  "weight_decay": 0.0001,
+  "epochs": 80,
+  "patience": 20,
+  "amp": true,
+  "jobs": 1,
+  "metapath_k": 20,
+  "venue_min_out": 10,
+  "venue_min_links": 30,
+  "n_cartels": 5,
+  "cartel_size": 4,
+  "n_selfcit": 10,
+  "intensities": {
+   "mild": 0.1,
+   "medium": 0.25,
+   "strong": 0.5
+  },
+  "injection_draws": 1
+ },
+ "runs": [
+  {
+   "amp": true,
+   "epochs": 36,
+   "metrics": {
+    "spearman": 0.3601583057709796,
+    "r2": 0.05080771446228027,
+    "mae": 0.8769749402999878
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.71,
+   "device": "cuda",
+   "peak_gpu_mb": 61.8
+  },
+  {
+   "amp": true,
+   "epochs": 38,
+   "metrics": {
+    "spearman": 0.37065562827511905,
+    "r2": 0.08327126502990723,
+    "mae": 0.8626787066459656
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.1,
+   "device": "cuda",
+   "peak_gpu_mb": 57.6
+  },
+  {
+   "amp": true,
+   "epochs": 35,
+   "metrics": {
+    "spearman": 0.3863140362320843,
+    "r2": 0.12427252531051636,
+    "mae": 0.8511546850204468
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.38,
+   "device": "cuda",
+   "peak_gpu_mb": 63.7
+  },
+  {
+   "amp": true,
+   "epochs": 34,
+   "metrics": {
+    "spearman": 0.3640899099320245,
+    "r2": 0.11588531732559204,
+    "mae": 0.8552331924438477
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.47,
+   "device": "cuda",
+   "peak_gpu_mb": 76.3
+  },
+  {
+   "amp": true,
+   "epochs": 37,
+   "metrics": {
+    "spearman": 0.3942521346896857,
+    "r2": 0.09156876802444458,
+    "mae": 0.886494517326355
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.6,
+   "device": "cuda",
+   "peak_gpu_mb": 87.9
+  },
+  {
+   "amp": true,
+   "epochs": 35,
+   "metrics": {
+    "spearman": 0.3677342652487403,
+    "r2": 0.08437597751617432,
+    "mae": 0.8917204737663269
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.46,
+   "device": "cuda",
+   "peak_gpu_mb": 94.4
+  },
+  {
+   "amp": true,
+   "epochs": 39,
+   "metrics": {
+    "spearman": 0.36598583744368485,
+    "r2": 0.03600478172302246,
+    "mae": 0.8728178143501282
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.2,
+   "device": "cuda",
+   "peak_gpu_mb": 57.5
+  },
+  {
+   "amp": true,
+   "epochs": 31,
+   "metrics": {
+    "spearman": 0.3028348565301557,
+    "r2": 0.09061181545257568,
+    "mae": 0.8648830652236938
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.17,
+   "device": "cuda",
+   "peak_gpu_mb": 57.6
+  },
+  {
+   "amp": true,
+   "epochs": 31,
+   "metrics": {
+    "spearman": 0.3437738843177055,
+    "r2": 0.07123559713363647,
+    "mae": 0.8553656935691833
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.32,
+   "device": "cuda",
+   "peak_gpu_mb": 63.6
+  },
+  {
+   "amp": true,
+   "epochs": 33,
+   "metrics": {
+    "spearman": 0.33249948800745543,
+    "r2": 0.03872150182723999,
+    "mae": 0.9041244387626648
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.42,
+   "device": "cuda",
+   "peak_gpu_mb": 76.3
+  },
+  {
+   "amp": true,
+   "epochs": 31,
+   "metrics": {
+    "spearman": 0.4144520506248371,
+    "r2": 0.13535255193710327,
+    "mae": 0.8349560499191284
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.54,
+   "device": "cuda",
+   "peak_gpu_mb": 87.9
+  },
+  {
+   "amp": true,
+   "epochs": 29,
+   "metrics": {
+    "spearman": 0.3748943010135333,
+    "r2": 0.08939868211746216,
+    "mae": 0.8501455187797546
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "small",
+    "device": null,
+    "text_dim": 64
+   },
+   "time_s": 0.52,
+   "device": "cuda",
+   "peak_gpu_mb": 94.4
+  }
+ ],
+ "text_dim": 64,
+ "exploratory": true,
+ "pca_explained_variance": {
+  "specter": 0.8060460090637207,
+  "scibert": 0.7558053731918335
+ }
+}

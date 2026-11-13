@@ -1,0 +1,753 @@
+{
+ "summary": {
+  "k3": {
+   "mlp": {
+    "roc_auc": {
+     "mean": 0.49158249158249157,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3291220101583773,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage": {
+    "roc_auc": {
+     "mean": 0.476010101010101,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3256286272241375,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat": {
+    "roc_auc": {
+     "mean": 0.531986531986532,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.251581427850003,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "han_t0": {
+    "roc_auc": {
+     "mean": 0.484006734006734,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3266979803169836,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "han_temporal": {
+    "roc_auc": {
+     "mean": 0.47558922558922556,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3255972136391177,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "hgt_t0": {
+    "roc_auc": {
+     "mean": 0.531986531986532,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.24906732604369636,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "hgt_naive": {
+    "roc_auc": {
+     "mean": 0.5294612794612794,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.24655522229785404,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.25,
+     "std": 0.0,
+     "n": 1
+    }
+   }
+  },
+  "k5": {
+   "mlp": {
+    "roc_auc": {
+     "mean": 0.6622807017543859,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.24111295681063122,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.2857142984867096,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "sage": {
+    "roc_auc": {
+     "mean": 0.5219298245614036,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3246082621082621,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.1428571492433548,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "gat": {
+    "roc_auc": {
+     "mean": 0.5767543859649122,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.13816137566137565,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.1428571492433548,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "han_t0": {
+    "roc_auc": {
+     "mean": 0.5986842105263157,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.37005840071877805,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.2857142984867096,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "han_temporal": {
+    "roc_auc": {
+     "mean": 0.5833333333333334,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.3573889504122062,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.2857142984867096,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "hgt_t0": {
+    "roc_auc": {
+     "mean": 0.644736842105263,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.36447391456582634,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.2857142984867096,
+     "std": 0.0,
+     "n": 1
+    }
+   },
+   "hgt_naive": {
+    "roc_auc": {
+     "mean": 0.644736842105263,
+     "std": 0.0,
+     "n": 1
+    },
+    "ap": {
+     "mean": 0.36447391456582634,
+     "std": 0.0,
+     "n": 1
+    },
+    "p_at_10": {
+     "mean": 0.2857142984867096,
+     "std": 0.0,
+     "n": 1
+    }
+   }
+  }
+ },
+ "exp": 3,
+ "profile": "small",
+ "device": "cuda",
+ "gpu": "NVIDIA RTX A4500",
+ "workers": 2,
+ "wall_time_s": 10.8,
+ "config": {
+  "profile": "small",
+  "t0": 2017,
+  "sample_years": [
+   2017,
+   2022
+  ],
+  "last_complete_year": 2025,
+  "cby_first_year": 2012,
+  "horizons": [
+   3,
+   5
+  ],
+  "label_inclusive": true,
+  "top_share": 0.1,
+  "coldstart_test_start": {
+   "3": 2021,
+   "5": 2020
+  },
+  "seeds": [
+   0
+  ],
+  "split": [
+   0.7,
+   0.15,
+   0.15
+  ],
+  "n_lab_topics": 2,
+  "n_open_topics": 2,
+  "papers_per_topic": 100,
+  "sample_seed": 20261024,
+  "refs_of_open_seeds": false,
+  "max_paper_nodes": 5000,
+  "min_ref_citers": 2,
+  "workers": 4,
+  "min_interval": 0.12,
+  "budget_reserve": 150,
+  "title_threshold": 90.0,
+  "max_title_searches": 5,
+  "default_text": "specter",
+  "embed_batch": 256,
+  "embed_max_len": 320,
+  "device": "cuda",
+  "hidden": 128,
+  "heads": 4,
+  "dropout": 0.3,
+  "lr": 0.003,
+  "weight_decay": 0.0001,
+  "epochs": 80,
+  "patience": 20,
+  "amp": true,
+  "jobs": 2,
+  "metapath_k": 20,
+  "venue_min_out": 10,
+  "venue_min_links": 30,
+  "n_cartels": 5,
+  "cartel_size": 4,
+  "n_selfcit": 10,
+  "intensities": {
+   "mild": 0.1,
+   "medium": 0.25,
+   "strong": 0.5
+  },
+  "injection_draws": 1
+ },
+ "runs": [
+  {
+   "amp": true,
+   "epochs": 23,
+   "metrics": {
+    "roc_auc": 0.49158249158249157,
+    "ap": 0.3291220101583773,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.62,
+   "device": "cuda",
+   "peak_gpu_mb": 80.5
+  },
+  {
+   "amp": true,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.476010101010101,
+    "ap": 0.3256286272241375,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.74,
+   "device": "cuda",
+   "peak_gpu_mb": 86.7
+  },
+  {
+   "amp": true,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.531986531986532,
+    "ap": 0.251581427850003,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.5,
+   "device": "cuda",
+   "peak_gpu_mb": 110.2
+  },
+  {
+   "amp": true,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.484006734006734,
+    "ap": 0.3266979803169836,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "han_t0",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.65,
+   "device": "cuda",
+   "peak_gpu_mb": 189.5
+  },
+  {
+   "amp": true,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.47558922558922556,
+    "ap": 0.3255972136391177,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "han_temporal",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.74,
+   "device": "cuda",
+   "peak_gpu_mb": 189.7
+  },
+  {
+   "amp": false,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.531986531986532,
+    "ap": 0.24906732604369636,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "hgt_t0",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.85,
+   "device": "cuda",
+   "peak_gpu_mb": 405.7
+  },
+  {
+   "amp": false,
+   "epochs": 22,
+   "metrics": {
+    "roc_auc": 0.5294612794612794,
+    "ap": 0.24655522229785404,
+    "p_at_10": 0.25
+   },
+   "n_train": 515,
+   "n_test": 111,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "hgt_naive",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.99,
+   "device": "cuda",
+   "peak_gpu_mb": 447.9
+  },
+  {
+   "amp": true,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.6622807017543859,
+    "ap": 0.24111295681063122,
+    "p_at_10": 0.2857142984867096
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.08,
+   "device": "cuda",
+   "peak_gpu_mb": 79.6
+  },
+  {
+   "amp": true,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.5219298245614036,
+    "ap": 0.3246082621082621,
+    "p_at_10": 0.1428571492433548
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.21,
+   "device": "cuda",
+   "peak_gpu_mb": 85.7
+  },
+  {
+   "amp": true,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.5767543859649122,
+    "ap": 0.13816137566137565,
+    "p_at_10": 0.1428571492433548
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.37,
+   "device": "cuda",
+   "peak_gpu_mb": 110.1
+  },
+  {
+   "amp": true,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.5986842105263157,
+    "ap": 0.37005840071877805,
+    "p_at_10": 0.2857142984867096
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "han_t0",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.66,
+   "device": "cuda",
+   "peak_gpu_mb": 190.0
+  },
+  {
+   "amp": true,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.5833333333333334,
+    "ap": 0.3573889504122062,
+    "p_at_10": 0.2857142984867096
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "han_temporal",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.4,
+   "device": "cuda",
+   "peak_gpu_mb": 190.2
+  },
+  {
+   "amp": false,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.644736842105263,
+    "ap": 0.36447391456582634,
+    "p_at_10": 0.2857142984867096
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "hgt_t0",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.67,
+   "device": "cuda",
+   "peak_gpu_mb": 404.1
+  },
+  {
+   "amp": false,
+   "epochs": 21,
+   "metrics": {
+    "roc_auc": 0.644736842105263,
+    "ap": 0.36447391456582634,
+    "p_at_10": 0.2857142984867096
+   },
+   "n_train": 283,
+   "n_test": 61,
+   "job": {
+    "kind": "node",
+    "exp": 3,
+    "model": "hgt_naive",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "cls",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "profile": "small",
+    "device": null
+   },
+   "time_s": 0.79,
+   "device": "cuda",
+   "peak_gpu_mb": 451.7
+  }
+ ]
+}

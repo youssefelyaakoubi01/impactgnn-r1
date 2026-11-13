@@ -1,0 +1,360 @@
+{
+ "n_topics": 48,
+ "by_group": {
+  "lab": 6000,
+  "open": 6000
+ },
+ "fields": {
+  "Computer Science": 2750,
+  "Engineering": 2500,
+  "Decision Sciences": 1500,
+  "Economics, Econometrics and Finance": 1000,
+  "Mathematics": 750,
+  "Business, Management and Accounting": 500,
+  "Biochemistry, Genetics and Molecular Biology": 500,
+  "Agricultural and Biological Sciences": 500,
+  "Materials Science": 500,
+  "Neuroscience": 250,
+  "Environmental Science": 250,
+  "Social Sciences": 250,
+  "Arts and Humanities": 250,
+  "Medicine": 250,
+  "Psychology": 250
+ },
+ "n_fields": 15,
+ "per_topic": {
+  "n_labelled": {
+   "min": 250.0,
+   "q25": 250.0,
+   "median": 250.0,
+   "q75": 250.0,
+   "max": 250.0
+  },
+  "median_citations_3y": {
+   "min": 1.0,
+   "q25": 4.0,
+   "median": 7.0,
+   "q75": 10.0,
+   "max": 17.0
+  },
+  "top10_rate": {
+   "min": 0.004000000189989805,
+   "q25": 0.04399999976158142,
+   "median": 0.07200000062584877,
+   "q75": 0.15399999544024467,
+   "max": 0.31200000643730164
+  },
+  "n_top10": {
+   "min": 1.0,
+   "q25": 11.0,
+   "median": 18.0,
+   "q75": 38.5,
+   "max": 78.0
+  },
+  "median_in_graph_refs": {
+   "min": 1.0,
+   "q25": 6.75,
+   "median": 10.0,
+   "q75": 13.25,
+   "max": 29.0
+  },
+  "mean_coverage": {
+   "min": 0.1597810135177354,
+   "q25": 0.27074423489183097,
+   "median": 0.31347295304054956,
+   "q75": 0.38130542891016866,
+   "max": 0.6462635596427196
+  },
+  "share_no_in_graph_ref": {
+   "min": 0.0,
+   "q25": 0.012,
+   "median": 0.034,
+   "q75": 0.068,
+   "max": 0.28
+  }
+ },
+ "top10_rate_by_field": {
+  "Agricultural and Biological Sciences": 0.17599999904632568,
+  "Arts and Humanities": 0.012000000104308128,
+  "Biochemistry, Genetics and Molecular Biology": 0.1459999978542328,
+  "Business, Management and Accounting": 0.03200000151991844,
+  "Computer Science": 0.10329999774694443,
+  "Decision Sciences": 0.11670000106096268,
+  "Economics, Econometrics and Finance": 0.04500000178813934,
+  "Engineering": 0.10400000214576721,
+  "Environmental Science": 0.1120000034570694,
+  "Materials Science": 0.18799999356269836,
+  "Mathematics": 0.0560000017285347,
+  "Medicine": 0.2639999985694885,
+  "Neuroscience": 0.1080000028014183,
+  "Psychology": 0.1599999964237213,
+  "Social Sciences": 0.012000000104308128
+ },
+ "labelled_by_year": {
+  "2017": 1343,
+  "2018": 1493,
+  "2019": 1683,
+  "2020": 2124,
+  "2021": 2551,
+  "2022": 2806
+ },
+ "variants": {
+  "submitted": {
+   "nodes": 59985,
+   "edges": 629575,
+   "labelled": {
+    "median": 9.0,
+    "mean": 12.8495,
+    "zero_share": 0.050333333333333334,
+    "coverage": 0.3267750536536122
+   },
+   "train_2017_2018": {
+    "median": 9.0,
+    "mean": 12.45135510771369,
+    "zero_share": 0.046907574704656015,
+    "coverage": 0.3517820390191877
+   },
+   "test_2022": {
+    "median": 8.0,
+    "mean": 11.679615110477549,
+    "zero_share": 0.06628652886671418,
+    "coverage": 0.28541715862656014
+   }
+  },
+  "cap30k": {
+   "nodes": 30000,
+   "edges": 244469,
+   "labelled": {
+    "median": 5.0,
+    "mean": 7.623166666666667,
+    "zero_share": 0.12116666666666667,
+    "coverage": 0.19458050637407753
+   },
+   "train_2017_2018": {
+    "median": 5.0,
+    "mean": 6.901320361362057,
+    "zero_share": 0.12334954829742877,
+    "coverage": 0.1962875589564242
+   },
+   "test_2022": {
+    "median": 5.0,
+    "mean": 7.439415538132573,
+    "zero_share": 0.13399857448325017,
+    "coverage": 0.1831740886487808
+   }
+  },
+  "cap45k": {
+   "nodes": 45000,
+   "edges": 429186,
+   "labelled": {
+    "median": 7.0,
+    "mean": 10.39775,
+    "zero_share": 0.06916666666666667,
+    "coverage": 0.26548425425618244
+   },
+   "train_2017_2018": {
+    "median": 7.0,
+    "mean": 9.493398193189716,
+    "zero_share": 0.07157748436414177,
+    "coverage": 0.2696472240361845
+   },
+   "test_2022": {
+    "median": 7.0,
+    "mean": 10.08232359230221,
+    "zero_share": 0.08054169636493229,
+    "coverage": 0.24770757115613234
+   }
+  },
+  "cap60k": {
+   "nodes": 60000,
+   "edges": 634029,
+   "labelled": {
+    "median": 9.0,
+    "mean": 12.828416666666667,
+    "zero_share": 0.04666666666666667,
+    "coverage": 0.32707091173344405
+   },
+   "train_2017_2018": {
+    "median": 9.0,
+    "mean": 11.727936066712996,
+    "zero_share": 0.050382209867963865,
+    "coverage": 0.3324731307006568
+   },
+   "test_2022": {
+    "median": 9.0,
+    "mean": 12.473984319315752,
+    "zero_share": 0.05523877405559515,
+    "coverage": 0.30667766232578586
+   }
+  },
+  "uncapped": {
+   "nodes": 67848,
+   "edges": 755582,
+   "labelled": {
+    "median": 10.0,
+    "mean": 14.104666666666667,
+    "zero_share": 0.03941666666666667,
+    "coverage": 0.35922511270652646
+   },
+   "train_2017_2018": {
+    "median": 10.0,
+    "mean": 12.913481584433635,
+    "zero_share": 0.042738012508686585,
+    "coverage": 0.3653149316405067
+   },
+   "test_2022": {
+    "median": 10.0,
+    "mean": 13.739486813970064,
+    "zero_share": 0.0473984319315752,
+    "coverage": 0.33788661057367975
+   }
+  },
+  "cut2022": {
+   "nodes": 51937,
+   "edges": 504274,
+   "labelled": {
+    "median": 8.0,
+    "mean": 11.462583333333333,
+    "zero_share": 0.06991666666666667,
+    "coverage": 0.29340138198478066
+   },
+   "train_2017_2018": {
+    "median": 9.0,
+    "mean": 12.020152883947185,
+    "zero_share": 0.048644892286309936,
+    "coverage": 0.3402101009914054
+   },
+   "test_2022": {
+    "median": 4.0,
+    "mean": 6.748039914468995,
+    "zero_share": 0.14932287954383464,
+    "coverage": 0.1655921804883589
+   }
+  },
+  "cut2022lso": {
+   "nodes": 51937,
+   "edges": 454919,
+   "labelled": {
+    "median": 5.0,
+    "mean": 7.376916666666666,
+    "zero_share": 0.126,
+    "coverage": 0.18873672899484695
+   },
+   "train_2017_2018": {
+    "median": 5.0,
+    "mean": 7.016678248783878,
+    "zero_share": 0.12195969423210563,
+    "coverage": 0.2001654806609784
+   },
+   "test_2022": {
+    "median": 4.0,
+    "mean": 6.748039914468995,
+    "zero_share": 0.14932287954383464,
+    "coverage": 0.1655921804883589
+   }
+  },
+  "cut2022sym": {
+   "nodes": 64190,
+   "edges": 628295,
+   "labelled": {
+    "median": 9.0,
+    "mean": 12.572583333333334,
+    "zero_share": 0.050916666666666666,
+    "coverage": 0.3204665416354566
+   },
+   "train_2017_2018": {
+    "median": 9.0,
+    "mean": 12.020152883947185,
+    "zero_share": 0.048644892286309936,
+    "coverage": 0.3402101009914054
+   },
+   "test_2022": {
+    "median": 8.0,
+    "mean": 11.495010691375624,
+    "zero_share": 0.06806842480399145,
+    "coverage": 0.2813376957442788
+   }
+  },
+  "cut2021sym": {
+   "nodes": 56151,
+   "edges": 459227,
+   "labelled": {
+    "median": 7.0,
+    "mean": 10.571166666666667,
+    "zero_share": 0.07216666666666667,
+    "coverage": 0.27034745613186484
+   },
+   "train_2017_2018": {
+    "median": 8.0,
+    "mean": 10.855802640722723,
+    "zero_share": 0.05941626129256428,
+    "coverage": 0.3075461711773735
+   },
+   "test_2022": {
+    "median": 6.0,
+    "mean": 8.976122594440485,
+    "zero_share": 0.10121168923734854,
+    "coverage": 0.220367058332605
+   }
+  }
+ },
+ "selection": {
+  "shared_reference_nodes_submitted": 46346,
+  "fail_two_citers_before_2021": 22115,
+  "fail_two_citers_before_2022": 10823,
+  "no_citer_before_2021": 6792,
+  "cut_by_cap": 7863,
+  "cut_by_cap_published_2019_or_later": 0.667556912120056,
+  "kept_two_citers_published_2019_or_later": 0.015486213022321773,
+  "median_year_cut": 2019.0,
+  "median_year_kept_two_citers": 2012.0
+ },
+ "labelled_seeds_k3": 336,
+ "protocols": {
+  "mature_2022": {
+   "train": 2446,
+   "validation": 432,
+   "test": 2806,
+   "train_plus_validation": 2878
+  },
+  "mature_2021": {
+   "train": 1142,
+   "validation": 202,
+   "test": 5357,
+   "train_plus_validation": 1344
+  },
+  "retro_k3": {
+   "train": 4612,
+   "validation": 2180,
+   "test": 5357,
+   "train_plus_validation": 6792
+  },
+  "retro_k5": {
+   "train": 2878,
+   "validation": 1734,
+   "test": 2124,
+   "train_plus_validation": 4612
+  },
+  "kfold_k3": {
+   "train": 8736,
+   "validation": 1542,
+   "test": 2058,
+   "train_plus_validation": 10278
+  },
+  "kfold_k5": {
+   "train": 4810,
+   "validation": 849,
+   "test": 1133,
+   "train_plus_validation": 5659
+  }
+ },
+ "record_semantics": {
+  "author_years_single_sampled_work": 6815,
+  "equal_to_total_citations": 6740,
+  "share": 0.989,
+  "author_year_entries": 707619,
+  "author_entries_citations_without_works": 0,
+  "venue_year_entries": 760389,
+  "venue_entries_citations_without_works": 0
+ }
+}

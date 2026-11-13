@@ -1,0 +1,27 @@
+data/
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/run_full.lock
+*.tmp
+
+# LaTeX build files
+paper/*.aux
+paper/*.log
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.bbl
+paper/*.blg
+paper/*.out
+
+# Submitted archive and LaTeX sync files
+paper.zip
+paper/*.synctex.gz
+
+# Per-run predictions and model checkpoints of the revision (archived separately, not in git)
+
+# Local archive of the revision (make_release.py)
+release/
+results/rev1/.gpu.lock

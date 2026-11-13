@@ -1,0 +1,2960 @@
+{
+ "summary": {
+  "k3": {
+   "mlp": {
+    "spearman": {
+     "mean": 0.6836545859833607,
+     "std": 0.01410514117856195,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4691732883453369,
+     "std": 0.0218801793443441,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7351226091384888,
+     "std": 0.009296483826456254,
+     "n": 5
+    }
+   },
+   "mlp_refagg": {
+    "spearman": {
+     "mean": 0.6929552555482017,
+     "std": 0.013934445442585451,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.48073033094406126,
+     "std": 0.01859878758758142,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7263815641403198,
+     "std": 0.009815290591386075,
+     "n": 5
+    }
+   },
+   "sage": {
+    "spearman": {
+     "mean": 0.682129173558754,
+     "std": 0.01440501036340597,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.46444087028503417,
+     "std": 0.023453467472396277,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7358354210853577,
+     "std": 0.014221398622789068,
+     "n": 5
+    }
+   },
+   "sage_e": {
+    "spearman": {
+     "mean": 0.6819204678454766,
+     "std": 0.016776094952930466,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4601238250732422,
+     "std": 0.031224387137049125,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7405521035194397,
+     "std": 0.016683513973951736,
+     "n": 5
+    }
+   },
+   "gat": {
+    "spearman": {
+     "mean": 0.6779392531122019,
+     "std": 0.014306155489582547,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4531652331352234,
+     "std": 0.020135003488227214,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7409572005271912,
+     "std": 0.0114131755479068,
+     "n": 5
+    }
+   },
+   "gat_e": {
+    "spearman": {
+     "mean": 0.6762302424691169,
+     "std": 0.02202053020209454,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4529124736785889,
+     "std": 0.0307311277233318,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7402911901473999,
+     "std": 0.015214168548322722,
+     "n": 5
+    }
+   }
+  },
+  "k5": {
+   "mlp": {
+    "spearman": {
+     "mean": 0.6815333673634052,
+     "std": 0.009795972108724293,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4681551456451416,
+     "std": 0.02000256066710961,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7933145880699157,
+     "std": 0.015043304679913192,
+     "n": 5
+    }
+   },
+   "mlp_refagg": {
+    "spearman": {
+     "mean": 0.6952225442456519,
+     "std": 0.013398235461531115,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.48345227241516114,
+     "std": 0.024536344526040182,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7824153780937195,
+     "std": 0.01200345002693929,
+     "n": 5
+    }
+   },
+   "sage": {
+    "spearman": {
+     "mean": 0.6842772835802078,
+     "std": 0.01034102056051412,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4670786738395691,
+     "std": 0.013990737752191736,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7916208386421204,
+     "std": 0.014843888921250228,
+     "n": 5
+    }
+   },
+   "sage_e": {
+    "spearman": {
+     "mean": 0.6791794358410099,
+     "std": 0.009250073860405621,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.4593031287193298,
+     "std": 0.019197781034447494,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.7962036371231079,
+     "std": 0.011422169036283824,
+     "n": 5
+    }
+   },
+   "gat": {
+    "spearman": {
+     "mean": 0.672644239293877,
+     "std": 0.016321042043089286,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.44604326486587526,
+     "std": 0.026250924019832023,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.8004074931144715,
+     "std": 0.015200443573912996,
+     "n": 5
+    }
+   },
+   "gat_e": {
+    "spearman": {
+     "mean": 0.6768950606575788,
+     "std": 0.017791762936841444,
+     "n": 5
+    },
+    "r2": {
+     "mean": 0.45279951095581056,
+     "std": 0.026126460850637037,
+     "n": 5
+    },
+    "mae": {
+     "mean": 0.796630322933197,
+     "std": 0.015016870807332387,
+     "n": 5
+    }
+   }
+  }
+ },
+ "examples": [
+  {
+   "title": "Machine Learning: Algorithms, Real-World Applications and Research Directions",
+   "year": 2021,
+   "venue": "SN Computer Science",
+   "citations_3y": 3031,
+   "n_refs_in_graph": 85,
+   "top3": [
+    {
+     "title": "Manufacturing process data analysis pipelines: a requirements analysis and survey",
+     "year": 2019,
+     "citations_before_citing_year": 25,
+     "attention": 0.036826010793447495,
+     "uniform": 0.011764705882352941
+    },
+    {
+     "title": "Towards the development of realistic botnet dataset in the Internet of Things for network forensic analytics: Bot-IoT dataset",
+     "year": 2019,
+     "citations_before_citing_year": 124,
+     "attention": 0.029820535331964493,
+     "uniform": 0.011764705882352941
+    },
+    {
+     "title": "Achieving sustainable performance in a data-driven agriculture supply chain: A review for research and applications",
+     "year": 2019,
+     "citations_before_citing_year": 97,
+     "attention": 0.028200432658195496,
+     "uniform": 0.011764705882352941
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Data Mining: Practical Machine Learning Tools and Techniques",
+     "year": 2011,
+     "citations_before_citing_year": 22218,
+     "attention": 0.007012135349214077,
+     "uniform": 0.011764705882352941
+    },
+    {
+     "title": "Top 10 algorithms in data mining",
+     "year": 2007,
+     "citations_before_citing_year": 3701,
+     "attention": 0.007051403634250164,
+     "uniform": 0.011764705882352941
+    },
+    {
+     "title": "Data mining: concepts and techniques",
+     "year": 2012,
+     "citations_before_citing_year": 24160,
+     "attention": 0.007065413985401392,
+     "uniform": 0.011764705882352941
+    }
+   ]
+  },
+  {
+   "title": "Machine learning and deep learning",
+   "year": 2021,
+   "venue": "Electronic Markets",
+   "citations_3y": 1634,
+   "n_refs_in_graph": 24,
+   "top3": [
+    {
+     "title": "A strategy to apply machine learning to small datasets in materials science",
+     "year": 2018,
+     "citations_before_citing_year": 129,
+     "attention": 0.07544972002506256,
+     "uniform": 0.041666666666666664
+    },
+    {
+     "title": "Robust Physical-World Attacks on Deep Learning Visual Classification",
+     "year": 2018,
+     "citations_before_citing_year": 471,
+     "attention": 0.06869790703058243,
+     "uniform": 0.041666666666666664
+    },
+    {
+     "title": "Deep Learning",
+     "year": 2016,
+     "citations_before_citing_year": 6271,
+     "attention": 0.05399679020047188,
+     "uniform": 0.041666666666666664
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Machine learning: a review of classification and combining techniques",
+     "year": 2006,
+     "citations_before_citing_year": 645,
+     "attention": 0.022195717319846153,
+     "uniform": 0.041666666666666664
+    },
+    {
+     "title": "A Survey on Deep Learning",
+     "year": 2018,
+     "citations_before_citing_year": 224,
+     "attention": 0.026878688484430313,
+     "uniform": 0.041666666666666664
+    },
+    {
+     "title": "Term-weighting approaches in automatic text retrieval",
+     "year": 1988,
+     "citations_before_citing_year": 7523,
+     "attention": 0.02887464500963688,
+     "uniform": 0.041666666666666664
+    }
+   ]
+  },
+  {
+   "title": "Characterization of the receptor-binding domain (RBD) of 2019 novel coronavirus: implication for development of RBD protein as a viral attachment inhibitor and vaccine",
+   "year": 2020,
+   "venue": "Cellular and Molecular Immunology",
+   "citations_3y": 1437,
+   "n_refs_in_graph": 17,
+   "top3": [
+    {
+     "title": "Theoretical Basis, Experimental Design, and Computerized Simulation of Synergism and Antagonism in Drug Combination Studies",
+     "year": 2006,
+     "citations_before_citing_year": 2708,
+     "attention": 0.08083128929138184,
+     "uniform": 0.058823529411764705
+    },
+    {
+     "title": "Isolation of a Novel Coronavirus from a Man with Pneumonia in Saudi Arabia",
+     "year": 2012,
+     "citations_before_citing_year": 1562,
+     "attention": 0.07103412598371506,
+     "uniform": 0.058823529411764705
+    },
+    {
+     "title": "Epidemiology and cause of severe acute respiratory syndrome (SARS) in Guangdong, People's Republic of China, in February, 2003",
+     "year": 2003,
+     "citations_before_citing_year": 282,
+     "attention": 0.06911860406398773,
+     "uniform": 0.058823529411764705
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "Receptor usage and cell entry of bat coronavirus HKU4 provide insight into bat-to-human transmission of MERS coronavirus",
+     "year": 2014,
+     "citations_before_citing_year": 111,
+     "attention": 0.04238181933760643,
+     "uniform": 0.058823529411764705
+    },
+    {
+     "title": "MERS-CoV spike protein: a key target for antivirals",
+     "year": 2016,
+     "citations_before_citing_year": 40,
+     "attention": 0.046002402901649475,
+     "uniform": 0.058823529411764705
+    },
+    {
+     "title": "Structure of SARS Coronavirus Spike Receptor-Binding Domain Complexed with Receptor",
+     "year": 2005,
+     "citations_before_citing_year": 329,
+     "attention": 0.04767986387014389,
+     "uniform": 0.058823529411764705
+    }
+   ]
+  },
+  {
+   "title": "Investigating Mental Health of US College Students During the COVID-19 Pandemic: Cross-Sectional Survey Study",
+   "year": 2020,
+   "venue": "Journal of Medical Internet Research",
+   "citations_3y": 1011,
+   "n_refs_in_graph": 11,
+   "top3": [
+    {
+     "title": "Iranian mental health during the COVID-19 epidemic",
+     "year": 2020,
+     "citations_before_citing_year": 1,
+     "attention": 0.10186576843261719,
+     "uniform": 0.09090909090909091
+    },
+    {
+     "title": "Online mental health services in China during the COVID-19 outbreak",
+     "year": 2020,
+     "citations_before_citing_year": 6,
+     "attention": 0.09563423693180084,
+     "uniform": 0.09090909090909091
+    },
+    {
+     "title": "Multidisciplinary research priorities for the COVID-19 pandemic: a call for action for mental health science",
+     "year": 2020,
+     "citations_before_citing_year": 21,
+     "attention": 0.09348428249359131,
+     "uniform": 0.09090909090909091
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "The PHQ-9: A New Depression Diagnostic and Severity Measure",
+     "year": 2002,
+     "citations_before_citing_year": 2237,
+     "attention": 0.07232262939214706,
+     "uniform": 0.09090909090909091
+    },
+    {
+     "title": "Affective temperament, attachment style, and the psychological impact of the COVID-19 outbreak: an early report on the Italian general population",
+     "year": 2020,
+     "citations_before_citing_year": 0,
+     "attention": 0.07368280738592148,
+     "uniform": 0.09090909090909091
+    },
+    {
+     "title": "College life is stressful today \u2013 Emerging stressors and depressive symptoms in college students",
+     "year": 2018,
+     "citations_before_citing_year": 11,
+     "attention": 0.07477889955043793,
+     "uniform": 0.09090909090909091
+    }
+   ]
+  },
+  {
+   "title": "Knowledge Graphs",
+   "year": 2021,
+   "venue": "ACM Computing Surveys",
+   "citations_3y": 950,
+   "n_refs_in_graph": 147,
+   "top3": [
+    {
+     "title": "Virtuoso, a Hybrid RDBMS/Graph Column Store.",
+     "year": 2012,
+     "citations_before_citing_year": 85,
+     "attention": 0.01360291987657547,
+     "uniform": 0.006802721088435374
+    },
+    {
+     "title": "Nanopublication beyond the sciences: the PeriodO period gazetteer",
+     "year": 2016,
+     "citations_before_citing_year": 18,
+     "attention": 0.013567544519901276,
+     "uniform": 0.006802721088435374
+    },
+    {
+     "title": "Canonical Forms for Isomorphic and Equivalent RDF Graphs",
+     "year": 2017,
+     "citations_before_citing_year": 8,
+     "attention": 0.011876458302140236,
+     "uniform": 0.006802721088435374
+    }
+   ],
+   "bottom3": [
+    {
+     "title": "deqa: Deep Web Extraction for Question Answering",
+     "year": 2012,
+     "citations_before_citing_year": 38,
+     "attention": 0.003726119874045253,
+     "uniform": 0.006802721088435374
+    },
+    {
+     "title": "Rule Learning from Knowledge Graphs Guided by Embedding Models",
+     "year": 2018,
+     "citations_before_citing_year": 43,
+     "attention": 0.004054292570799589,
+     "uniform": 0.006802721088435374
+    },
+    {
+     "title": "Web-scale information extraction in knowitall",
+     "year": 2004,
+     "citations_before_citing_year": 696,
+     "attention": 0.004278713371604681,
+     "uniform": 0.006802721088435374
+    }
+   ]
+  }
+ ],
+ "attention": {
+  "gat|k3": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": -0.06475981469308045,
+     "std": 0.09492078719976761,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.4211337558193753,
+     "std": 0.12018162694481947,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.01646266574722747,
+     "std": 0.1365012024095122,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5121326069456767,
+     "std": 0.16078741559228404,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.05363687167603719,
+     "std": 0.08430826691378993,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.01894182339552194,
+     "std": 0.11762681037696787,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": -0.04589255153966245,
+     "std": 0.044510810022787645,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.4354429203798434,
+     "std": 0.05037815693625391,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": -0.015024616049126804,
+     "std": 0.031037468086061254,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.4739736630653793,
+     "std": 0.03791890453394078,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.050751743194189736,
+     "std": 0.027678961921872816,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": -0.036344970988266515,
+     "std": 0.020308673669260997,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": -0.07428811767364865,
+     "std": 0.05028490703821474,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.40152360869105974,
+     "std": 0.06244958933250958,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.03474305891709868,
+     "std": 0.06350702263826516,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5400490824528142,
+     "std": 0.08054709556902463,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.07183929695137366,
+     "std": 0.047229997385135385,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.03279008678293933,
+     "std": 0.05669587575328159,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.20113033950328826,
+    "std": 0.0038717024929135666,
+    "n": 5
+   }
+  },
+  "gat|k5": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": 0.08306058339246407,
+     "std": 0.07711217475287349,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.5990840689441785,
+     "std": 0.08930151674661442,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.18663036884272793,
+     "std": 0.06842747682888009,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.7012437103098084,
+     "std": 0.06597880934700262,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": 0.0946566224916204,
+     "std": 0.07816555679829112,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.17863900693848667,
+     "std": 0.0669767089084615,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": -0.04488729881068307,
+     "std": 0.04754063524444028,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.43522603710868984,
+     "std": 0.05811463528136395,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": -0.012359062693642928,
+     "std": 0.035086041232257455,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.47620856946098106,
+     "std": 0.043566572113396894,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.050967764706043604,
+     "std": 0.029982145719435846,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": -0.04167698574226135,
+     "std": 0.022342335327532648,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": 0.041473491228312565,
+     "std": 0.062467291316833096,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.5396053800124543,
+     "std": 0.07927474188909418,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.15357813383743082,
+     "std": 0.07823128879327096,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6666201059548261,
+     "std": 0.09142935370242303,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": 0.03260179887419089,
+     "std": 0.057465291816987736,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.13149252624016422,
+     "std": 0.07419853643673446,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.1866884171962738,
+    "std": 0.0057035549699322825,
+    "n": 5
+   }
+  },
+  "gat_e|k3": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": -0.35485734302468214,
+     "std": 0.42553935486017525,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.2596161626987613,
+     "std": 0.3306196962917855,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": -0.153292206070789,
+     "std": 0.3850022761795717,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.3814742842383084,
+     "std": 0.35993666809612623,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.2800362074151823,
+     "std": 0.3741286875988773,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": -0.09854064678878502,
+     "std": 0.3396346062163013,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": 0.19300776206757586,
+     "std": 0.30572705578868214,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.646677280459178,
+     "std": 0.22624885750296803,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.16556284060058193,
+     "std": 0.24615844537679685,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6330951914060713,
+     "std": 0.17951240826662412,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": 0.15846439172043036,
+     "std": 0.2750205510929629,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.12067730135557728,
+     "std": 0.21968856172721848,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": -0.6098007571719137,
+     "std": 0.2656667898030781,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.0749911157855589,
+     "std": 0.12012111189883073,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": -0.39224744187203714,
+     "std": 0.25601892645483393,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.17345251396382882,
+     "std": 0.18974614267049617,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.5073520782138089,
+     "std": 0.22691728206805264,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": -0.3126959712414884,
+     "std": 0.2207482997951986,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 1516.0,
+     "std": 14.949916387726054,
+     "n": 5
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.18773318231105804,
+    "std": 0.006732404865900984,
+    "n": 5
+   }
+  },
+  "gat_e|k5": {
+   "trained": {
+    "per_paper_cit_mean": {
+     "mean": -0.13250509452296821,
+     "std": 0.3471973219517917,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.3958344397426869,
+     "std": 0.31664749564530714,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.0007859647879352894,
+     "std": 0.3055383168979252,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.5202276945176992,
+     "std": 0.3054837712983699,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.09859976607081725,
+     "std": 0.3039031484918902,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.026577540072802663,
+     "std": 0.2636584903238052,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "untrained": {
+    "per_paper_cit_mean": {
+     "mean": 0.1971781100114431,
+     "std": 0.30823377501598304,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.6477397509987135,
+     "std": 0.2186830551609407,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": 0.17839317364701432,
+     "std": 0.2615785888343265,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.6386129017782607,
+     "std": 0.18436777719662725,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": 0.16178800325530354,
+     "std": 0.28560473046286905,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": 0.12049256811523901,
+     "std": 0.24058757892239682,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "trained_layer1": {
+    "per_paper_cit_mean": {
+     "mean": -0.2718762148867183,
+     "std": 0.32259945540727986,
+     "n": 5
+    },
+    "per_paper_cit_share_pos": {
+     "mean": 0.27640162957780895,
+     "std": 0.2577919392690173,
+     "n": 5
+    },
+    "per_paper_age_mean": {
+     "mean": -0.10209233088320557,
+     "std": 0.32064007353645096,
+     "n": 5
+    },
+    "per_paper_age_share_pos": {
+     "mean": 0.4125854124170455,
+     "std": 0.3113045852065509,
+     "n": 5
+    },
+    "pooled_cit": {
+     "mean": -0.22905668295997472,
+     "std": 0.27510747952469333,
+     "n": 5
+    },
+    "pooled_age": {
+     "mean": -0.07995725130261955,
+     "std": 0.26314274109022723,
+     "n": 5
+    },
+    "n_targets": {
+     "mean": 842.6,
+     "std": 7.26636084983398,
+     "n": 5
+    }
+   },
+   "self_attention_test_mean": {
+    "mean": 0.17588051855564119,
+    "std": 0.0058403490525552135,
+    "n": 5
+   }
+  }
+ },
+ "exp": 1,
+ "profile": "full",
+ "device": "cuda",
+ "gpu": "NVIDIA RTX A4500",
+ "workers": 3,
+ "wall_time_s": 306.2,
+ "config": {
+  "profile": "full",
+  "t0": 2017,
+  "sample_years": [
+   2017,
+   2022
+  ],
+  "last_complete_year": 2025,
+  "cby_first_year": 2012,
+  "horizons": [
+   3,
+   5
+  ],
+  "label_inclusive": true,
+  "top_share": 0.1,
+  "coldstart_test_start": {
+   "3": 2021,
+   "5": 2020
+  },
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "split": [
+   0.7,
+   0.15,
+   0.15
+  ],
+  "n_lab_topics": 24,
+  "n_open_topics": 24,
+  "papers_per_topic": 250,
+  "sample_seed": 20261024,
+  "refs_of_open_seeds": true,
+  "max_paper_nodes": 60000,
+  "min_ref_citers": 2,
+  "workers": 4,
+  "min_interval": 0.12,
+  "budget_reserve": 150,
+  "title_threshold": 90.0,
+  "max_title_searches": 60,
+  "default_text": "specter",
+  "embed_batch": 256,
+  "embed_max_len": 320,
+  "device": "cuda",
+  "hidden": 128,
+  "heads": 4,
+  "dropout": 0.3,
+  "lr": 0.003,
+  "weight_decay": 0.0001,
+  "epochs": 400,
+  "patience": 40,
+  "amp": true,
+  "jobs": 3,
+  "metapath_k": 20,
+  "venue_min_out": 10,
+  "venue_min_links": 30,
+  "n_cartels": 5,
+  "cartel_size": 4,
+  "n_selfcit": 10,
+  "intensities": {
+   "mild": 0.1,
+   "medium": 0.25,
+   "strong": 0.5
+  },
+  "injection_draws": 3
+ },
+ "runs": [
+  {
+   "amp": true,
+   "epochs": 97,
+   "metrics": {
+    "spearman": 0.6820352167921792,
+    "r2": 0.46461838483810425,
+    "mae": 0.7310612201690674
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.38,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.1
+  },
+  {
+   "amp": true,
+   "epochs": 89,
+   "metrics": {
+    "spearman": 0.6740379813110146,
+    "r2": 0.45180970430374146,
+    "mae": 0.7434183359146118
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.51,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.1
+  },
+  {
+   "amp": true,
+   "epochs": 105,
+   "metrics": {
+    "spearman": 0.6889864986010843,
+    "r2": 0.47829651832580566,
+    "mae": 0.7389578819274902
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.69,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.1
+  },
+  {
+   "amp": true,
+   "epochs": 101,
+   "metrics": {
+    "spearman": 0.6685115851486086,
+    "r2": 0.4488535523414612,
+    "mae": 0.741410493850708
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.16,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.1
+  },
+  {
+   "amp": true,
+   "epochs": 97,
+   "metrics": {
+    "spearman": 0.7047016480639167,
+    "r2": 0.502288281917572,
+    "mae": 0.7207651138305664
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.1,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.1
+  },
+  {
+   "amp": true,
+   "epochs": 94,
+   "metrics": {
+    "spearman": 0.6904589773903484,
+    "r2": 0.4795711636543274,
+    "mae": 0.720669150352478
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.06,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 89,
+   "metrics": {
+    "spearman": 0.6869362190945547,
+    "r2": 0.4665489196777344,
+    "mae": 0.7321593761444092
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.97,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.691085109340439,
+    "r2": 0.4805262088775635,
+    "mae": 0.7333162426948547
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.99,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 86,
+   "metrics": {
+    "spearman": 0.6797524901824373,
+    "r2": 0.46547722816467285,
+    "mae": 0.7339890599250793
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.9,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 89,
+   "metrics": {
+    "spearman": 0.7165434817332292,
+    "r2": 0.5115281343460083,
+    "mae": 0.7117739915847778
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.99,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.6893600769960114,
+    "r2": 0.47931694984436035,
+    "mae": 0.719992995262146
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 13.08,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.4
+  },
+  {
+   "amp": true,
+   "epochs": 105,
+   "metrics": {
+    "spearman": 0.6751932602799647,
+    "r2": 0.44060391187667847,
+    "mae": 0.7432602643966675
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 14.96,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.4
+  },
+  {
+   "amp": true,
+   "epochs": 111,
+   "metrics": {
+    "spearman": 0.6682124837206577,
+    "r2": 0.4487907886505127,
+    "mae": 0.7540259957313538
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 15.87,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.4
+  },
+  {
+   "amp": true,
+   "epochs": 99,
+   "metrics": {
+    "spearman": 0.6740542108641656,
+    "r2": 0.45597392320632935,
+    "mae": 0.7388302087783813
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 14.19,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.4
+  },
+  {
+   "amp": true,
+   "epochs": 101,
+   "metrics": {
+    "spearman": 0.7038258359329704,
+    "r2": 0.49751877784729004,
+    "mae": 0.7230676412582397
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 14.5,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.4
+  },
+  {
+   "amp": true,
+   "epochs": 110,
+   "metrics": {
+    "spearman": 0.6831161094030291,
+    "r2": 0.4670279026031494,
+    "mae": 0.7280598282814026
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 20.91,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 98,
+   "metrics": {
+    "spearman": 0.6672553233024051,
+    "r2": 0.41880232095718384,
+    "mae": 0.7636903524398804
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 18.78,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 116,
+   "metrics": {
+    "spearman": 0.6843807441478245,
+    "r2": 0.4695737361907959,
+    "mae": 0.7423410415649414
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 22.23,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.6668995004558012,
+    "r2": 0.44308024644851685,
+    "mae": 0.7474000453948975
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.56,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 91,
+   "metrics": {
+    "spearman": 0.7079506619183229,
+    "r2": 0.5021349191665649,
+    "mae": 0.7212692499160767
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.15,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 91,
+   "metrics": {
+    "spearman": 0.6695730328358511,
+    "r2": 0.44078391790390015,
+    "mae": 0.7441977262496948
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.55,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.9
+  },
+  {
+   "amp": true,
+   "epochs": 96,
+   "metrics": {
+    "spearman": 0.6706930122775537,
+    "r2": 0.44112062454223633,
+    "mae": 0.7426691651344299
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 18.52,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.9
+  },
+  {
+   "amp": true,
+   "epochs": 96,
+   "metrics": {
+    "spearman": 0.6799763500030405,
+    "r2": 0.4593367576599121,
+    "mae": 0.7453249096870422
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 18.44,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.9
+  },
+  {
+   "amp": true,
+   "epochs": 82,
+   "metrics": {
+    "spearman": 0.6674083372561558,
+    "r2": 0.43864285945892334,
+    "mae": 0.7512152194976807
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 15.57,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.9
+  },
+  {
+   "amp": true,
+   "epochs": 112,
+   "metrics": {
+    "spearman": 0.7020455331884086,
+    "r2": 0.485942006111145,
+    "mae": 0.7213789820671082
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 20.73,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.9
+  },
+  {
+   "amp": true,
+   "epochs": 108,
+   "metrics": {
+    "spearman": 0.6700034331327557,
+    "r2": 0.44153618812561035,
+    "mae": 0.7429118156433105
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 28.79,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 84,
+   "metrics": {
+    "spearman": 0.6566113063369847,
+    "r2": 0.4284628629684448,
+    "mae": 0.753852128982544
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 1,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 22.47,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 102,
+   "metrics": {
+    "spearman": 0.6803100898213668,
+    "r2": 0.45930880308151245,
+    "mae": 0.7381629347801208
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 2,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 26.87,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 87,
+   "metrics": {
+    "spearman": 0.661989329590463,
+    "r2": 0.43173545598983765,
+    "mae": 0.751038670539856
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 3,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 22.81,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 105,
+   "metrics": {
+    "spearman": 0.7122370534640146,
+    "r2": 0.5035190582275391,
+    "mae": 0.7154904007911682
+   },
+   "n_train": 8636,
+   "n_test": 1851,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 3,
+    "split": "random",
+    "seed": 4,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 27.92,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 99,
+   "metrics": {
+    "spearman": 0.6835504548385514,
+    "r2": 0.4667903184890747,
+    "mae": 0.775908887386322
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.2,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.0
+  },
+  {
+   "amp": true,
+   "epochs": 82,
+   "metrics": {
+    "spearman": 0.6859584316905792,
+    "r2": 0.45686978101730347,
+    "mae": 0.7874916195869446
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.01,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.0
+  },
+  {
+   "amp": true,
+   "epochs": 90,
+   "metrics": {
+    "spearman": 0.676329297523276,
+    "r2": 0.47064411640167236,
+    "mae": 0.8070986270904541
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.11,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.0
+  },
+  {
+   "amp": true,
+   "epochs": 84,
+   "metrics": {
+    "spearman": 0.6680235219918905,
+    "r2": 0.44665223360061646,
+    "mae": 0.8109546899795532
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.03,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.0
+  },
+  {
+   "amp": true,
+   "epochs": 83,
+   "metrics": {
+    "spearman": 0.693805130772729,
+    "r2": 0.499819278717041,
+    "mae": 0.7851191163063049
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.02,
+   "device": "cuda",
+   "peak_gpu_mb": 1191.0
+  },
+  {
+   "amp": true,
+   "epochs": 98,
+   "metrics": {
+    "spearman": 0.6903929882150364,
+    "r2": 0.4811409115791321,
+    "mae": 0.7710874676704407
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.16,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 105,
+   "metrics": {
+    "spearman": 0.6942479113268172,
+    "r2": 0.455322265625,
+    "mae": 0.789726972579956
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.26,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.6848106544025673,
+    "r2": 0.4851563572883606,
+    "mae": 0.792544424533844
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 1.1,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 84,
+   "metrics": {
+    "spearman": 0.688265918405947,
+    "r2": 0.4733702540397644,
+    "mae": 0.7910481095314026
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.96,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 77,
+   "metrics": {
+    "spearman": 0.7183952488778913,
+    "r2": 0.5222715735435486,
+    "mae": 0.7676699161529541
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "mlp_refagg",
+    "groups": [
+     "base",
+     "author",
+     "venue",
+     "refagg"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 0.9,
+   "device": "cuda",
+   "peak_gpu_mb": 1195.7
+  },
+  {
+   "amp": true,
+   "epochs": 104,
+   "metrics": {
+    "spearman": 0.6829317666434203,
+    "r2": 0.4607163667678833,
+    "mae": 0.7789644002914429
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 14.93,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.3
+  },
+  {
+   "amp": true,
+   "epochs": 79,
+   "metrics": {
+    "spearman": 0.691834340934366,
+    "r2": 0.46688389778137207,
+    "mae": 0.779113233089447
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 11.26,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.3
+  },
+  {
+   "amp": true,
+   "epochs": 87,
+   "metrics": {
+    "spearman": 0.6732054293157371,
+    "r2": 0.4643709659576416,
+    "mae": 0.8079392910003662
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 12.66,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.3
+  },
+  {
+   "amp": true,
+   "epochs": 82,
+   "metrics": {
+    "spearman": 0.6758808526051896,
+    "r2": 0.4531073570251465,
+    "mae": 0.8074305653572083
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 12.03,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.3
+  },
+  {
+   "amp": true,
+   "epochs": 95,
+   "metrics": {
+    "spearman": 0.6975340284023261,
+    "r2": 0.490314781665802,
+    "mae": 0.7846567034721375
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 13.89,
+   "device": "cuda",
+   "peak_gpu_mb": 1370.3
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.6773275372846344,
+    "r2": 0.4550677537918091,
+    "mae": 0.783937931060791
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.74,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 109,
+   "metrics": {
+    "spearman": 0.6825279682230663,
+    "r2": 0.4351258873939514,
+    "mae": 0.7878968715667725
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 21.05,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 89,
+   "metrics": {
+    "spearman": 0.6677905098407314,
+    "r2": 0.4590373635292053,
+    "mae": 0.8129467368125916
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.21,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 80,
+   "metrics": {
+    "spearman": 0.6754949124687181,
+    "r2": 0.4584692120552063,
+    "mae": 0.800834059715271
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 15.39,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 81,
+   "metrics": {
+    "spearman": 0.6927562513878996,
+    "r2": 0.48881542682647705,
+    "mae": 0.7954025864601135
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "sage_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": false,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 15.39,
+   "device": "cuda",
+   "peak_gpu_mb": 2104.8
+  },
+  {
+   "amp": true,
+   "epochs": 92,
+   "metrics": {
+    "spearman": 0.6651057858040843,
+    "r2": 0.43524670600891113,
+    "mae": 0.7965854406356812
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.9,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.8
+  },
+  {
+   "amp": true,
+   "epochs": 113,
+   "metrics": {
+    "spearman": 0.6690145945965801,
+    "r2": 0.414159893989563,
+    "mae": 0.8041632771492004
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 21.58,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.8
+  },
+  {
+   "amp": true,
+   "epochs": 77,
+   "metrics": {
+    "spearman": 0.660154711402027,
+    "r2": 0.4492727518081665,
+    "mae": 0.8159763216972351
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 14.79,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.8
+  },
+  {
+   "amp": true,
+   "epochs": 90,
+   "metrics": {
+    "spearman": 0.6677447363834965,
+    "r2": 0.4453389644622803,
+    "mae": 0.8089802265167236
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 17.01,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.8
+  },
+  {
+   "amp": true,
+   "epochs": 107,
+   "metrics": {
+    "spearman": 0.7012013682831967,
+    "r2": 0.4861980080604553,
+    "mae": 0.7763321995735168
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 19.46,
+   "device": "cuda",
+   "peak_gpu_mb": 2698.8
+  },
+  {
+   "amp": true,
+   "epochs": 85,
+   "metrics": {
+    "spearman": 0.6694408484345235,
+    "r2": 0.4436389207839966,
+    "mae": 0.7911987900733948
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 0,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 23.11,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 94,
+   "metrics": {
+    "spearman": 0.6742766329438731,
+    "r2": 0.4317924380302429,
+    "mae": 0.7910698652267456
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 1,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 25.11,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 91,
+   "metrics": {
+    "spearman": 0.6639040897413552,
+    "r2": 0.442421019077301,
+    "mae": 0.8122833967208862
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 2,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 23.97,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 84,
+   "metrics": {
+    "spearman": 0.6688177422904171,
+    "r2": 0.44781941175460815,
+    "mae": 0.8114129900932312
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 3,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 21.55,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  },
+  {
+   "amp": true,
+   "epochs": 96,
+   "metrics": {
+    "spearman": 0.708035989877725,
+    "r2": 0.49832576513290405,
+    "mae": 0.7771865725517273
+   },
+   "n_train": 4755,
+   "n_test": 1019,
+   "job": {
+    "kind": "node",
+    "exp": 1,
+    "model": "gat_e",
+    "groups": [
+     "base",
+     "author",
+     "venue"
+    ],
+    "text": "specter",
+    "task": "reg",
+    "k": 5,
+    "split": "random",
+    "seed": 4,
+    "attention": true,
+    "profile": "full",
+    "device": null
+   },
+   "time_s": 16.78,
+   "device": "cuda",
+   "peak_gpu_mb": 3041.4
+  }
+ ]
+}

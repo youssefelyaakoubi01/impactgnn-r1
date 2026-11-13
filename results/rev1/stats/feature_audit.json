@@ -1,0 +1,45 @@
+{
+ "n_labelled": 12336,
+ "share_papers_all_authors_exact": 0.9899481193255513,
+ "mean_share_authors_exact": 0.9415930509567261,
+ "spearman_with_log_c3": {
+  "author_max_cit_hind": 0.48,
+  "author_max_cit_exact": 0.447,
+  "author_mean_cit_hind": 0.426,
+  "author_mean_cit_exact": 0.387,
+  "author_max_works": 0.401,
+  "venue_cit_per_work_hind": 0.593,
+  "venue_cit_per_work_corpus": 0.446,
+  "venue_cit_hind": 0.493,
+  "venue_cit_corpus": 0.475,
+  "venue_works": 0.343
+ },
+ "ratio_hind_over_exact_author_max_cit": {
+  "median": 2.3590657711029053,
+  "median_log_diff": 0.7520358562469482
+ },
+ "hind_exact_rank_corr_author_max": 0.976,
+ "median_ratio_hind_exact": 2.121314314476287,
+ "rolling": {
+  "author": {
+   "snapshots": 60204,
+   "fwd_edges": 86594,
+   "rev_edges": 91987,
+   "with_earlier_paper": 0.36191946268081665
+  },
+  "venue": {
+   "snapshots": 16651,
+   "fwd_edges": 65581,
+   "rev_edges": 126563,
+   "with_earlier_paper": 0.7187556028366089
+  },
+  "keyword": {
+   "snapshots": 131978,
+   "fwd_edges": 460121,
+   "rev_edges": 1073643,
+   "with_earlier_paper": 0.9422934055328369
+  },
+  "authors_with_one_paper_share": 0.7427335381507874,
+  "total_snapshots": 208833
+ }
+}

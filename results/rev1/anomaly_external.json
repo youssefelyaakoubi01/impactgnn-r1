@@ -1,0 +1,92 @@
+{
+ "n_suppressed_in_graph": 16,
+ "n_venues": 3136,
+ "by_reason": {
+  "self-citation": 9,
+  "stacking": 7
+ },
+ "median_out_links_suppressed": 93.0,
+ "median_out_links_all": 59.0,
+ "detectors": {
+  "heur_self_ratio": {
+   "roc_auc": 0.7094651442307692,
+   "p_perm": 0.001,
+   "roc_auc_matched": 0.654296875,
+   "median_percentile": 0.7442602040816326,
+   "in_top_decile": 6,
+   "roc_auc_self": 0.6639484063532672
+  },
+  "heur_reciprocity": {
+   "roc_auc": 0.5244991987179488,
+   "p_perm": 0.3626,
+   "roc_auc_matched": 0.466796875,
+   "median_percentile": 0.6287468112244898,
+   "in_top_decile": 1,
+   "roc_auc_self": 0.3915716163877341
+  },
+  "heur_max": {
+   "roc_auc": 0.6736979166666668,
+   "p_perm": 0.0076,
+   "roc_auc_matched": 0.6181640625,
+   "median_percentile": 0.6642219387755102,
+   "in_top_decile": 4,
+   "roc_auc_self": 0.610951213445617
+  },
+  "null_excess": {
+   "roc_auc": 0.587530048076923,
+   "p_perm": 0.1148,
+   "roc_auc_matched": 0.531640625,
+   "median_percentile": 0.5615433673469388,
+   "in_top_decile": 3,
+   "roc_auc_self": 0.47820061827097327
+  },
+  "dominant_content": {
+   "roc_auc": 0.4037059294871795,
+   "p_perm": 0.9092,
+   "roc_auc_matched": 0.43671875,
+   "median_percentile": 0.3310586734693877,
+   "in_top_decile": 0,
+   "roc_auc_self": 0.3578154425612053
+  },
+  "gae_content": {
+   "roc_auc": 0.44548277243589746,
+   "p_perm": 0.769,
+   "roc_auc_matched": 0.525,
+   "median_percentile": 0.462531887755102,
+   "in_top_decile": 1,
+   "roc_auc_self": 0.602405571545322
+  },
+  "iforest_content": {
+   "roc_auc": 0.3964342948717949,
+   "p_perm": 0.9242,
+   "roc_auc_matched": 0.42421875,
+   "median_percentile": 0.37735969387755103,
+   "in_top_decile": 0,
+   "roc_auc_self": 0.3881426997832498
+  },
+  "dominant_full": {
+   "roc_auc": 0.43312299679487176,
+   "p_perm": 0.8292,
+   "roc_auc_matched": 0.462890625,
+   "median_percentile": 0.3042410714285715,
+   "in_top_decile": 1,
+   "roc_auc_self": 0.42186334079522436
+  },
+  "gae_full": {
+   "roc_auc": 0.45553886217948714,
+   "p_perm": 0.7298,
+   "roc_auc_matched": 0.51484375,
+   "median_percentile": 0.5396045918367347,
+   "in_top_decile": 0,
+   "roc_auc_self": 0.5292435063781402
+  },
+  "iforest_full": {
+   "roc_auc": 0.4521033653846154,
+   "p_perm": 0.7392,
+   "roc_auc_matched": 0.46171874999999996,
+   "median_percentile": 0.4317920918367347,
+   "in_top_decile": 0,
+   "roc_auc_self": 0.3897594428454678
+  }
+ }
+}

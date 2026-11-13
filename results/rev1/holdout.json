@@ -1,0 +1,248 @@
+{
+ "n_fresh": 2400,
+ "n_topics": 48,
+ "positives": 239,
+ "contrasts": [
+  {
+   "a": "sage",
+   "b": "mlp",
+   "metric": "spearman",
+   "mean_a": 0.5966976284980774,
+   "mean_b": 0.6090432405471802,
+   "sd_a": 0.0083396565169096,
+   "sd_b": 0.005327834747731686,
+   "diff": -0.012345750816166401,
+   "ci": [
+    -0.02166313650086522,
+    -0.0029302098380867437
+   ],
+   "p": 0.004,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    -0.022568367328494786,
+    -0.00152736731979531
+   ],
+   "task": "reg",
+   "role": "primary",
+   "p_holm": 0.016
+  },
+  {
+   "a": "gat",
+   "b": "mlp",
+   "metric": "spearman",
+   "mean_a": 0.5930774211883545,
+   "mean_b": 0.6090432405471802,
+   "sd_a": 0.0064509566873312,
+   "sd_b": 0.005327834747731686,
+   "diff": -0.01596599444746971,
+   "ci": [
+    -0.02674770443700254,
+    -0.005519619642291223
+   ],
+   "p": 0.002,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    -0.028877659887075424,
+    -0.002845906291622676
+   ],
+   "task": "reg",
+   "role": "primary",
+   "p_holm": 0.01
+  },
+  {
+   "a": "mlp+refagg",
+   "b": "mlp",
+   "metric": "spearman",
+   "mean_a": 0.619013786315918,
+   "mean_b": 0.6090432405471802,
+   "sd_a": 0.005419467575848103,
+   "sd_b": 0.005327834747731686,
+   "diff": 0.009970526210963726,
+   "ci": [
+    0.0019372585404198617,
+    0.01779406941495836
+   ],
+   "p": 0.015,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.0007848962908610702,
+    0.020525477407500145
+   ],
+   "task": "reg",
+   "role": "primary",
+   "p_holm": 0.03
+  },
+  {
+   "a": "hgt_roll",
+   "b": "mlp",
+   "metric": "roc_auc",
+   "mean_a": 0.8036963939666748,
+   "mean_b": 0.7877856492996216,
+   "sd_a": 0.006755569949746132,
+   "sd_b": 0.013380777090787888,
+   "diff": 0.015910811722278595,
+   "ci": [
+    0.005133474036119879,
+    0.026610106322914356
+   ],
+   "p": 0.004,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.00426855901023373,
+    0.027109376713633532
+   ],
+   "task": "cls",
+   "role": "primary",
+   "p_holm": 0.016
+  },
+  {
+   "a": "sage",
+   "b": "mlp",
+   "metric": "roc_auc",
+   "mean_a": 0.7885875105857849,
+   "mean_b": 0.7877856492996216,
+   "sd_a": 0.008500558324158192,
+   "sd_b": 0.013380777090787888,
+   "diff": 0.0008018493535928428,
+   "ci": [
+    -0.008432612265460193,
+    0.009914536448195567
+   ],
+   "p": 0.837,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": true,
+   "different": false,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    -0.01077113936189562,
+    0.011563410749658939
+   ],
+   "task": "cls",
+   "role": "primary",
+   "p_holm": 0.837
+  },
+  {
+   "a": "hgt_roll|specter|d768",
+   "b": "mlp|specter|d768",
+   "metric": "roc_auc",
+   "mean_a": 0.7724527716636658,
+   "mean_b": 0.7335836887359619,
+   "sd_a": 0.0223905760794878,
+   "sd_b": 0.026511088013648987,
+   "diff": 0.03886909410357475,
+   "ci": [
+    0.027750225132331253,
+    0.050741601083427665
+   ],
+   "p": 0.0005,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.02506226086989045,
+    0.053641423303633924
+   ],
+   "task": "cls",
+   "role": "primary",
+   "p_holm": 0.0035
+  },
+  {
+   "a": "hgt_roll|specter|d64",
+   "b": "mlp|specter|d64",
+   "metric": "roc_auc",
+   "mean_a": 0.7978301644325256,
+   "mean_b": 0.7747898697853088,
+   "sd_a": 0.008715927600860596,
+   "sd_b": 0.0072393170557916164,
+   "diff": 0.023040298372507095,
+   "ci": [
+    0.0113244597800076,
+    0.034996366687119
+   ],
+   "p": 0.0005,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.011165284784510732,
+    0.0351128339767456
+   ],
+   "task": "cls",
+   "role": "primary",
+   "p_holm": 0.0035
+  },
+  {
+   "a": "mlp|specter|d64",
+   "b": "mlp|specter|d768",
+   "metric": "roc_auc",
+   "mean_a": 0.7747898697853088,
+   "mean_b": 0.7335836887359619,
+   "sd_a": 0.0072393170557916164,
+   "sd_b": 0.026511088013648987,
+   "diff": 0.04120614007115364,
+   "ci": [
+    0.01944619109854102,
+    0.06164675075560808
+   ],
+   "p": 0.0005,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.022283860994502903,
+    0.060031959321349845
+   ],
+   "task": "cls",
+   "role": "secondary"
+  },
+  {
+   "a": "hgt_roll|specter|d64",
+   "b": "hgt_roll|specter|d768",
+   "metric": "roc_auc",
+   "mean_a": 0.7978301644325256,
+   "mean_b": 0.7724527716636658,
+   "sd_a": 0.008715927600860596,
+   "sd_b": 0.0223905760794878,
+   "diff": 0.025377344340085983,
+   "ci": [
+    0.009706574003212154,
+    0.039709639362990844
+   ],
+   "p": 0.002,
+   "n_runs": 15,
+   "n_test": 2400,
+   "equivalent": false,
+   "different": true,
+   "design": "paper bootstrap",
+   "topic_ci": [
+    0.01220846192445606,
+    0.03877119245007633
+   ],
+   "task": "cls",
+   "role": "secondary"
+  }
+ ]
+}
