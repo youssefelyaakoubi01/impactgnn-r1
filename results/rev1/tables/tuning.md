@@ -1,6 +1,6 @@
-**Table @tuning.** Initial and tuned hyperparameters at *k* = 3 (primary protocol: mean ± std over 15 runs; retrospective K-fold: over 12 test folds). Δ is the paired difference with the MLP under the same setting. Exploratory analysis.
+**Table @tuning.** Fixed and tuned configurations at *k* = 3 (primary protocol: mean ± std over 15 runs; retrospective K-fold: over 12 test folds). Δ is the paired difference with the MLP under the same setting. Exploratory analysis.
 
-| Protocol, metric | Model | Initial configuration | Δ vs MLP (initial) | Tuned configuration | Δ vs MLP (tuned) |
+| Protocol, metric | Model | Fixed configuration | Δ vs MLP (fixed) | Tuned configuration | Δ vs MLP (tuned) |
 |---|---|---|---|---|---|
 | Primary, Spearman | MLP | 0.603 ± 0.010 | reference | 0.639 ± 0.005 | reference |
 |  | MLP + all-reference aggregates | 0.619 ± 0.013 | +0.016 [+0.010, +0.021]ᵇ | 0.646 ± 0.004 | +0.007 [+0.001, +0.014]ᵇ |

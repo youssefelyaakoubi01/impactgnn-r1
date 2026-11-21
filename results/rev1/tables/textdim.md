@@ -1,4 +1,4 @@
-**Table @textdim.** Text dimension in the retrospective K-fold at *k* = 3, with the hyperparameters of the initial version (mean ± std over 12 test folds). The 64 principal components are fitted on the training graph of each fold. Exploratory analysis.
+**Table @textdim.** Text dimension in the retrospective K-fold at *k* = 3, with the fixed configuration (mean ± std over 12 test folds). The 64 principal components are fitted on the training graph of each fold. Exploratory analysis.
 
 | Model | Metric | SPECTER, 768 dimensions | SPECTER, 64 components | SciBERT, 768 dimensions | SciBERT, 64 components |
 |---|---|---|---|---|---|

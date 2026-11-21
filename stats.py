@@ -124,9 +124,11 @@ def _stack(df: pd.DataFrame, arm: str, part: str = "te"):
 
 def contrast_fixed(df: pd.DataFrame, a: str, b: str, metric: str, n_boot: int = N_BOOT, seed: int = 0,
                    cluster: bool = False, margin: float = MARGIN, subset: np.ndarray | None = None,
-                   topic_of: pd.Series | None = None) -> dict:
+                   topic_of: pd.Series | None = None, resample_runs: bool = False) -> dict:
     """Arm ``a`` minus arm ``b`` on a common test set; ``cluster`` resamples topics instead of papers;
-    ``subset`` restricts the test papers (boolean mask)."""
+    ``subset`` restricts the test papers (boolean mask). ``resample_runs`` also resamples the paired runs, so that
+    the interval includes the variability of training; the runs are drawn with a second generator, so the papers
+    drawn are those of the interval without this option."""
     Pa, y, ids, ka = _stack(df, a)
     Pb, yb, idb, kb = _stack(df, b)
     assert ka == kb, f"runs of {a} and {b} are not paired"
@@ -136,7 +138,8 @@ def contrast_fixed(df: pd.DataFrame, a: str, b: str, metric: str, n_boot: int = 
     fn = METRICS[metric]
     ma, mb = fn(y[None], Pa), fn(y[None], Pb)
     rng = np.random.default_rng(seed)
-    n = len(y)
+    rng_runs = np.random.default_rng(seed + 1)
+    n, n_runs = len(y), len(Pa)
     if cluster:
         topic = (node_table().topic if topic_of is None else topic_of).loc[ids].to_numpy()
         groups = [np.flatnonzero(topic == t) for t in np.unique(topic)]
@@ -146,14 +149,15 @@ def contrast_fixed(df: pd.DataFrame, a: str, b: str, metric: str, n_boot: int = 
             idx = np.concatenate([groups[j] for j in rng.integers(len(groups), size=len(groups))])
         else:
             idx = rng.integers(n, size=n)
-        boots[i] = (fn(y[idx][None], Pa[:, idx]) - fn(y[idx][None], Pb[:, idx])).mean()
+        d = fn(y[idx][None], Pa[:, idx]) - fn(y[idx][None], Pb[:, idx])
+        boots[i] = d[rng_runs.integers(n_runs, size=n_runs)].mean() if resample_runs else d.mean()
     lo, hi = np.quantile(boots, [0.025, 0.975])
     p = 2 * min((boots <= 0).mean(), (boots >= 0).mean())
     return {"a": a, "b": b, "metric": metric, "mean_a": float(ma.mean()), "mean_b": float(mb.mean()),
             "sd_a": float(ma.std(ddof=1)), "sd_b": float(mb.std(ddof=1)), "diff": float((ma - mb).mean()),
             "ci": [float(lo), float(hi)], "p": float(min(1.0, max(p, 1.0 / n_boot))), "n_runs": int(len(ma)),
             "n_test": int(n), "equivalent": bool(lo > -margin and hi < margin), "different": bool(lo > 0 or hi < 0),
-            "design": "topic bootstrap" if cluster else "paper bootstrap"}
+            "design": ("topic" if cluster else "paper") + (" and run bootstrap" if resample_runs else " bootstrap")}
 
 
 # ====================================================================== repeated K-fold: corrected t-test

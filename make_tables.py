@@ -391,7 +391,7 @@ def tables_coldstart() -> None:
             for v in CS_NAMES]
     write("coldstart", "Cold start: test papers absent from the training graph (Spearman correlation). Primary "
                        "protocol: *k* = 3, labels closed before the prediction date, mean ± std over 15 runs. "
-                       "Retrospective temporal split of the initial version: mean ± std over 5 seeds.",
+                       "Retrospective temporal split: mean ± std over 5 seeds.",
           ["Variant", "Primary protocol", "Primary: Δ vs MLP, all features", "Retrospective, *k* = 3",
            "Retrospective, *k* = 5"], rows, NOTE)
     sub = sel(runs("retro"), task="reg", k=3)
@@ -517,14 +517,14 @@ def tables_textdim() -> None:
             rows.append([NAMES[m], "Spearman" if task == "reg" else "ROC-AUC"] +
                         [cell(d, f"{m}|{t}|d{dim}", metric, f"textdim.kfold.{m}.{t}.d{dim}")
                          for t in ("specter", "scibert") for dim in (768, 64)])
-    write("textdim", "Text dimension in the retrospective K-fold at *k* = 3, with the hyperparameters of the "
-                     "initial version (mean ± std over 12 test folds). The 64 principal components are fitted on "
+    write("textdim", "Text dimension in the retrospective K-fold at *k* = 3, with the fixed configuration "
+                     "(mean ± std over 12 test folds). The 64 principal components are fitted on "
                      "the training graph of each fold.",
           ["Model", "Metric", "SPECTER, 768 dimensions", "SPECTER, 64 components", "SciBERT, 768 dimensions",
            "SciBERT, 64 components"], rows)
     pri = runs("mature_pca")
     rows = []
-    for label, df in (("K-fold, initial hyperparameters", sel(kf, task="cls")),
+    for label, df in (("K-fold, fixed configuration", sel(kf, task="cls")),
                       ("Primary protocol, tuned hyperparameters", sel(pri, task="cls"))):
         tag = "kfold" if label.startswith("K-fold") else "primary"
         for t in ("specter", "scibert"):
@@ -535,7 +535,7 @@ def tables_textdim() -> None:
                     rows.append([label, TEXT_NAMES[t], f"{NAMES[h]} − MLP", c768, c64])
     d = sel(kf, task="cls")
     if not d[d.arm == "hgt_t0|specter|d64|fit_all"].empty:
-        rows.append(["K-fold, initial hyperparameters", "SPECTER, components fitted on all nodes (as in the initial version)",
+        rows.append(["K-fold, fixed configuration", "SPECTER, components fitted on all nodes",
                      "HGT (T0 rule) − MLP", "–",
                      con(d, "hgt_t0|specter|d64|fit_all", "mlp|specter|d64|fit_all", "roc_auc",
                          "textdim.kfold.hgt_t0-mlp.specter.d64.fit_all")])
@@ -556,7 +556,7 @@ def tables_textdim() -> None:
 
 # ====================================================================== bibliometric statistics and audit
 BIB_NAMES = {"exact": "Exact (before publication)", "strict": "Strict (no citation counts)",
-             "hind": "Initial version (hindsight)"}
+             "hind": "Hindsight"}
 
 
 def tables_biblio() -> None:
@@ -565,7 +565,7 @@ def tables_biblio() -> None:
     for df, tag, pname in ((pri, "primary", "Primary (15 runs)"), (kf, "kfold", "K-fold (12 folds)")):
         first = True
         for text in ("none", "scibert"):
-            for bib, bname in (("exact", "Exact"), ("strict", "Strict"), ("hind", "Initial")):
+            for bib, bname in (("exact", "Exact"), ("strict", "Strict"), ("hind", "Hindsight")):
                 row = [pname if first else "", TEXT_NAMES[text], bname]
                 first = False
                 for task, metric in (("reg", "spearman"), ("cls", "roc_auc")):
@@ -578,8 +578,8 @@ def tables_biblio() -> None:
                             f"biblio.{tag}.reg.mlp.{text}.{bib}-exact"))
                 rows.append(row)
     write("biblio", "Author and venue statistics at *k* = 3 (mean ± std over runs or over test folds). Exact: "
-                    "citations received before publication; strict: no citation counts; initial: statistics of the "
-                    "initial version, which contain hindsight. Δ is the paired difference of the MLP with the same "
+                    "citations received before publication; strict: no citation counts; hindsight: yearly counts of the "
+                    "author and source records (Section 3.2). Δ is the paired difference of the MLP with the same "
                     "model on the exact statistics.",
           ["Protocol", "Text", "Variant", "MLP: Spearman", "MLP: Δ Spearman vs exact",
            "GraphSAGE: Spearman", "MLP: ROC-AUC", "GraphSAGE: ROC-AUC"], rows, NOTE)
@@ -616,16 +616,55 @@ def tables_biblio() -> None:
             row += [c, "–" if c == "–" else "reference" if ref is None
                     else con(d, arm, ref, metric, f"audit.{task}.{arm}-{ref}")]
         rows.append(row)
+    # does the advantage of HGT over the MLP need the author information? the same contrast with and without it
+    d = sel(df, task="cls")
+    full = con(d, "hgt_roll", "mlp", "roc_auc", "audit.cls.hgt_roll-mlp")
+    no_author = con(d, "hgt_roll|no_author", "mlp|no_author", "roc_auc", "audit.cls.hgt_roll|no_author-mlp|no_author")
+    strip = lambda s: s.rstrip("ᵃᵇ")  # noqa: E731
     write("audit_runs", "Sensitivity to metadata whose state at the prediction date is uncertain (primary protocol, "
                         "*k* = 3, mean ± std over 15 runs). Δ is the paired difference with the same model on all "
                         "features.",
-          ["Configuration", "Spearman", "Δ Spearman", "ROC-AUC", "Δ ROC-AUC"], rows, NOTE)
+          ["Configuration", "Spearman", "Δ Spearman", "ROC-AUC", "Δ ROC-AUC"], rows,
+          NOTE + f" Paired difference in ROC-AUC between HGT (rolling rule) and the MLP: {strip(full)} with all "
+                 f"features, and {strip(no_author)} between HGT without author nodes and features and the MLP "
+                 f"without author features.")
+
+
+# ====================================================================== training variability in the intervals
+def tables_runsboot() -> None:
+    """Paired intervals of the primary protocol when the 15 runs are resampled together with the test papers."""
+    df = runs("mature_main", "mature_audit")
+    rows = []
+    for task, metric, a, b, name, role in (
+            ("reg", "spearman", "sage", "mlp", "GraphSAGE − MLP", "registered"),
+            ("reg", "spearman", "gat", "mlp", "GAT − MLP", "registered"),
+            ("reg", "spearman", "mlp+refagg", "mlp", "MLP + all-reference aggregates − MLP", "registered"),
+            ("cls", "roc_auc", "hgt_roll", "mlp", "HGT (rolling rule) − MLP", "registered"),
+            ("cls", "roc_auc", "sage", "mlp", "GraphSAGE − MLP", "registered"),
+            ("cls", "roc_auc", "gat", "mlp", "GAT − MLP", "exploratory"),
+            ("cls", "roc_auc", "han_temporal", "mlp", "HAN (temporal rule) − MLP", "exploratory"),
+            ("cls", "roc_auc", "hgt_roll|no_keyword", "hgt_roll", "HGT without keyword nodes − HGT", "exploratory"),
+            ("cls", "roc_auc", "hgt_roll|no_author", "mlp|no_author",
+             "HGT without author nodes and features − MLP without author features", "exploratory")):
+        d = sel(df, task=task)
+        da, db = d[d.arm == a], d[d.arm == b]
+        ck = "runs|" + hashlib.sha1("|".join([metric] + sorted(da.id) + ["vs"] + sorted(db.id)).encode()).hexdigest()
+        if ck not in _CACHE:
+            _CACHE[ck] = S.contrast_fixed(d, a, b, metric, resample_runs=True)
+            _CACHE_FILE.write_text(json.dumps(_CACHE, default=float))
+        record(f"runsboot.{task}.{a}-{b}", _CACHE[ck])
+        rows.append(["Spearman" if task == "reg" else "ROC-AUC", name, role,
+                     con(d, a, b, metric, f"runsboot.papers.{task}.{a}-{b}"), diff_ci(_CACHE[ck])])
+    write("runs_boot", "Paired differences of the primary protocol (*k* = 3, 15 runs) with two 95 % intervals: the "
+                       "bootstrap over the test papers used in the article, which keeps the 15 trained models fixed, "
+                       "and a bootstrap that resamples the test papers and the 15 runs.",
+          ["Metric", "Contrast", "Role", "Δ [95 % interval, papers]", "Δ [95 % interval, papers and runs]"], rows, NOTE)
 
 
 # ====================================================================== graphs, coverage and feature parity
 def tables_graphs() -> None:
     df = runs("mature_main", "mature_graphs")
-    gnames = {"submitted": "Initial (all years, cap by identifier)", "cut2022": "Restricted to 2022, strict",
+    gnames = {"submitted": "All years, cap 60,000 (ties by identifier)", "cut2022": "Restricted to 2022, strict",
               "cut2022lso": "Restricted to 2022, leave-self-out", "cut2022sym": "Restricted to 2022 (primary)"}
     reg, cls = sel(df, task="reg"), sel(df, task="cls")
     rows = [["None (the MLP does not use the graph)", "MLP", "Spearman", cell(reg, "mlp", "spearman", "graphs.mlp.spearman"),
@@ -645,7 +684,7 @@ def tables_graphs() -> None:
     kf = sel(runs("kfold_main", "kfold_caps"), task="reg", k=3)
     rows = []
     for g, gn in (("cap30k", "Cap 30,000"), ("cap45k", "Cap 45,000"), ("cap60k", "Cap 60,000 (ties by hash)"),
-                  ("submitted", "Initial graph"), ("uncapped", "Uncapped")):
+                  ("submitted", "All-years graph"), ("uncapped", "Uncapped")):
         a = (lambda m: m) if g == "submitted" else (lambda m: f"{m}@{g}")  # noqa: E731
         rows.append([gn, cell(kf, a("mlp+refagg_in"), "spearman", f"caps.{g}.mlp+refagg_in"),
                      cell(kf, a("sage"), "spearman", f"caps.{g}.sage"),
@@ -736,7 +775,7 @@ def tables_topics() -> None:
     half = len(trows) // 2
     write("topics_full", "The 48 topics of the sample (250 labelled papers each), first part: median citations at "
                          "three years, share of papers in the top-10 % class, median number of in-graph references, "
-                         "mean share of the references of a paper that are graph nodes (initial graph), and Spearman "
+                         "mean share of the references of a paper that are graph nodes (all-years graph), and Spearman "
                          "correlation within the topic for the MLP and GraphSAGE (out-of-fold predictions of the "
                          "retrospective K-fold, *k* = 3).", thead, trows[:half])
     write("topics_full2", "The 48 topics of the sample, second part (columns as in Table @topics_full).", thead,
@@ -807,11 +846,11 @@ def tables_tuning() -> None:
                      f"{h['weight_decay']:g}", f"{b['val_default']:.3f}", f"{b['val']:.3f}"])
         assert (b["text_dim"] or 768) == 64, key          # stated in the caption
     write("hpo", "Hyperparameters selected for each model family, task and protocol among 24 configurations, with "
-                 "the mean validation metric of the initial configuration and of the selected one (Spearman "
+                 "the mean validation metric of the fixed configuration and of the selected one (Spearman "
                  "correlation for regression, ROC-AUC for classification). Every selected configuration uses 64 text "
                  "components.",
           ["Family", "Task, protocol", "Hidden units", "Layers", "Heads", "Dropout", "Learning rate", "Weight decay",
-           "Validation: initial", "Validation: selected"], rows)
+           "Validation: fixed", "Validation: selected"], rows)
     rows = []
     for g_def, g_tun, tag, extra, pname in (
             ("mature_default", "mature_main", "primary", {}, "Primary"),
@@ -827,10 +866,10 @@ def tables_tuning() -> None:
                              cell(d1, a, metric, f"tuning.{tag}.{task}.{a}.tuned"),
                              "reference" if a == "mlp" else con(d1, a, "mlp", metric, f"tuning.{tag}.{task}.{a}-mlp.tuned")])
                 first = False
-    write("tuning", "Initial and tuned hyperparameters at *k* = 3 (primary protocol: mean ± std over 15 runs; "
+    write("tuning", "Fixed and tuned configurations at *k* = 3 (primary protocol: mean ± std over 15 runs; "
                     "retrospective K-fold: over 12 test folds). Δ is the paired difference with the MLP under the same "
                     "setting.",
-          ["Protocol, metric", "Model", "Initial configuration", "Δ vs MLP (initial)", "Tuned configuration",
+          ["Protocol, metric", "Model", "Fixed configuration", "Δ vs MLP (fixed)", "Tuned configuration",
            "Δ vs MLP (tuned)"], rows, NOTE)
 
 
@@ -871,7 +910,7 @@ def tables_holdout() -> None:
         if not ra:
             return f"{short[ma]} − {short[mb]}"
         da, db = ra[1].replace("d", ""), rb[1].replace("d", "")
-        setting = "SPECTER, initial hyperparameters"
+        setting = "SPECTER, fixed configuration"
         if ma == mb:
             return f"{short[ma]}: {da} components − {db} dimensions ({setting})"
         unit = "dimensions" if da == "768" else "components"
@@ -893,7 +932,7 @@ def tables_holdout() -> None:
 TABLES = {"anomaly": tables_anomaly, "rq1": tables_rq1, "attention": tables_attention, "coldstart": tables_coldstart,
           "lab": tables_lab, "rq3": tables_rq3, "rq5": tables_rq5, "textdim": tables_textdim, "biblio": tables_biblio,
           "graphs": tables_graphs, "topics": tables_topics, "field": tables_field, "tuning": tables_tuning,
-          "origin": tables_origin, "holdout": tables_holdout}
+          "origin": tables_origin, "holdout": tables_holdout, "runsboot": tables_runsboot}
 
 
 def main() -> None:

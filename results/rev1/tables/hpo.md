@@ -1,6 +1,6 @@
-**Table @hpo.** Hyperparameters selected for each model family, task and protocol among 24 configurations, with the mean validation metric of the initial configuration and of the selected one (Spearman correlation for regression, ROC-AUC for classification). Every selected configuration uses 64 text components. Model selection on validation data; no test result.
+**Table @hpo.** Hyperparameters selected for each model family, task and protocol among 24 configurations, with the mean validation metric of the fixed configuration and of the selected one (Spearman correlation for regression, ROC-AUC for classification). Every selected configuration uses 64 text components. Model selection on validation data; no test result.
 
-| Family | Task, protocol | Hidden units | Layers | Heads | Dropout | Learning rate | Weight decay | Validation: initial | Validation: selected |
+| Family | Task, protocol | Hidden units | Layers | Heads | Dropout | Learning rate | Weight decay | Validation: fixed | Validation: selected |
 |---|---|---|---|---|---|---|---|---|---|
 | GAT | classification, K-fold | 256 | 3 | 8 | 0.1 | 0.001 | 0.01 | 0.829 | 0.852 |
 | GAT | classification, primary | 256 | 1 | 2 | 0.5 | 0.003 | 0.0001 | 0.791 | 0.831 |

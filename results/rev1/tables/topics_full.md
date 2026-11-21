@@ -1,4 +1,4 @@
-**Table @topics_full.** The 48 topics of the sample (250 labelled papers each), first part: median citations at three years, share of papers in the top-10 % class, median number of in-graph references, mean share of the references of a paper that are graph nodes (initial graph), and Spearman correlation within the topic for the MLP and GraphSAGE (out-of-fold predictions of the retrospective K-fold, *k* = 3). Exploratory analysis.
+**Table @topics_full.** The 48 topics of the sample (250 labelled papers each), first part: median citations at three years, share of papers in the top-10 % class, median number of in-graph references, mean share of the references of a paper that are graph nodes (all-years graph), and Spearman correlation within the topic for the MLP and GraphSAGE (out-of-fold predictions of the retrospective K-fold, *k* = 3). Exploratory analysis.
 
 | Topic | Field | Median citations | Top-10 % rate | In-graph references | Coverage | MLP | GraphSAGE |
 |---|---|---|---|---|---|---|---|

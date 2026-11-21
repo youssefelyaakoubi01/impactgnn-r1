@@ -46,6 +46,7 @@ case "${1:-}" in
     $PY paper/refs_md.py numbers
     $PY paper/check_numbers.py 2>&1 | tee logs/check_numbers.out
     $PY paper/md2tex.py
+    $PY paper/check_marks.py 2>&1 | tee logs/check_marks.out      # every change of the article is in red
     # the article and the supplement read each other's labels: article, supplement, then both again
     (cd paper && for pass in 1 2; do for doc in paper supplement paper_clean supplement_clean; do
        latexmk -g -pdf -interaction=nonstopmode "$doc.tex" > /dev/null || { echo "LaTeX failed: $doc"; exit 1; }

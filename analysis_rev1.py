@@ -90,6 +90,21 @@ def main() -> None:
         "median_year_cut": float(np.median(years[shared & ~sub])),
         "median_year_kept_two_citers": float(np.median(years[shared & sub & (g["sel_n_citers"].numpy() == 2)])),
     }
+    # entity nodes of the heterogeneous graph that have at least one paper node (the venue records also cover the
+    # references that are not nodes, so part of the venue nodes is isolated)
+    het = torch.load(cfg.processed_dir / "rev1" / "hetero.pt", weights_only=False)
+    comp["hetero_entities"] = {}
+    for name, tab in (("author", "author_cit_tab"), ("venue", "venue_cit_tab"), ("keyword", "keyword_tab")):
+        n_ent, used = int(het[tab].shape[0]), int(len(np.unique(het[f"rev_all_{name}"][1].numpy())))
+        comp["hetero_entities"][name] = {"nodes": n_ent, "with_paper_node": used, "isolated": n_ent - used}
+    # keyword nodes are kept when two papers of any year carry the keyword: how many would pass with the papers of
+    # the primary graph published before its prediction date only
+    kp, kk = het["rev_all_keyword"].numpy()
+    early = node_mask(g, "cut2022sym").numpy()[kp] & (years[kp] < 2022)
+    n_kw = comp["hetero_entities"]["keyword"]["nodes"]
+    ok = int((np.bincount(kk[early], minlength=n_kw) >= 2).sum())
+    comp["hetero_entities"]["keyword"].update({"two_papers_before_2022": ok, "fewer_before_2022": n_kw - ok,
+                                               "share_fewer_before_2022": round((n_kw - ok) / n_kw, 3)})
     # sizes of the protocols and number of labelled seed papers
     from protocols import make_split
 

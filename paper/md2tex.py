@@ -9,6 +9,7 @@ refs_md.py from the verified metadata), so no BibTeX run is needed.
 
 Revision marks: ``{+text+}`` marks changed or added text inside a line; ``<!--rev-->`` ... ``<!--/rev-->`` (each on
 its own line) marks whole blocks (paragraphs, lists, headings, equations, tables, figures, algorithms, references).
+Inside a marked block, ``{=text=}`` marks a passage that is unchanged from the submitted version: it stays black.
 ``paper.tex`` prints the marked text in red, as requested by the journal for a revised manuscript;
 ``paper_clean.tex`` is the same document without colour. References whose key is listed in ``new_refs.json`` are
 marked as new. Tables, figures and algorithms added in the revision carry a name instead of a number
@@ -32,6 +33,7 @@ HERE = Path(__file__).resolve().parent
 MARK = True          # print revision marks in red (False: clean copy)
 SUPP = False         # converting the supplement: citations are printed as the numbers of the article's list
 REV_ON, REV_OFF = "\x01", "\x02"
+KEEP_ON, KEEP_OFF = "\x03", "\x04"          # {=text=}: unchanged passage inside a marked block
 
 
 def red(tex: str) -> str:
@@ -60,6 +62,8 @@ PREAMBLE = r"""% Generated from axis1.md by md2tex.py. Layout reproduced from an
 \usepackage[hidelinks]{hyperref}
 %%EXTERNAL%%
 \renewcommand{\citeleft}{(}\renewcommand{\citeright}{)}
+% fixed space after the comma of a multiple citation (the default of cite.sty stretches from 0.03 to 0.23 em)
+\renewcommand{\citepunct}{,\penalty\citepunctpenalty\hskip0.25em\relax}
 \urlstyle{same}
 \graphicspath{{figures/}}
 \captionsetup{font=small,labelfont=bf,labelsep=period,justification=centering}
@@ -107,7 +111,7 @@ def inline(text: str) -> str:
         holders.append(s)
         return f"\x00{len(holders) - 1}\x00"
 
-    text = text.replace("{+", REV_ON).replace("+}", REV_OFF)
+    text = text.replace("{+", REV_ON).replace("+}", REV_OFF).replace("{=", KEEP_ON).replace("=}", KEEP_OFF)
     text = re.sub(r"\$([^$]+)\$", lambda m: hold("$" + m.group(1) + "$"), text)
     text = re.sub(r"`([^`]+)`", lambda m: hold(r"\texttt{" + esc(m.group(1)) + "}"), text)
     text = re.sub(r"\bT0\b", lambda m: hold("$T_0$"), text)                      # labels of the generated tables
@@ -130,6 +134,7 @@ def inline(text: str) -> str:
     text = re.sub(r"(\d),(\d{3})(?!\d)", r"\1{,}\2", text)
     text = re.sub(r"\x00(\d+)\x00", lambda m: holders[int(m.group(1))], text)
     text = text.replace(REV_ON, r"\textcolor{red}{" if MARK else "").replace(REV_OFF, "}" if MARK else "")
+    text = text.replace(KEEP_ON, r"\textcolor{black}{" if MARK else "").replace(KEEP_OFF, "}" if MARK else "")
     return text.replace(" ~\\cite", "~\\cite")
 
 

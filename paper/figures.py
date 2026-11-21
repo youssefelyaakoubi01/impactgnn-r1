@@ -1,4 +1,8 @@
-"""Paper figures, drawn only from results/*.json. ``.venv/bin/python paper/figures.py`` -> paper/figures/*.pdf|png
+"""Paper figures. ``.venv/bin/python paper/figures.py [name ...]`` -> paper/figures/*.pdf|png
+
+The result figures are drawn only from results/*.json. The workflow figure has no data: its panel (a) is the UML
+activity diagram ``figures/fig_workflow_a.puml``, rendered by PlantUML (``PLANTUML_JAR=/path/to/plantuml.jar`` with
+Java, or a ``plantuml`` command) and Ghostscript, and set next to panel (b) with pdflatex.
 
 Palette: validated categorical slots 1-5 (blue, orange, aqua, yellow, magenta); markers differ per series
 (secondary encoding), and every figure has a table with the same numbers in the paper.
@@ -7,6 +11,12 @@ Palette: validated categorical slots 1-5 (blue, orange, aqua, yellow, magenta); 
 from __future__ import annotations
 
 import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
 from pathlib import Path
 
 import matplotlib
@@ -63,7 +73,12 @@ def fig_text_structure() -> None:
         ax.set_title(title, fontsize=9, color=INK)
         ax.grid(axis="x", visible=False)
     axes[0].set_ylabel("Spearman ρ (test, k = 3)")
-    axes[1].legend(loc="lower right", fontsize=8)
+    # one key for both panels, outside the data area and centred under the two axes; markers only, because the
+    # error bars of the handles read as data points
+    handles, labels = axes[0].get_legend_handles_labels()
+    centre = (axes[0].get_position().x0 + axes[1].get_position().x1) / 2
+    fig.legend([h[0] for h in handles], labels, loc="upper center", ncol=3, fontsize=8, bbox_to_anchor=(centre, 0.0),
+               columnspacing=2.4, handletextpad=0.3)
     save(fig, "fig_text_structure")
 
 
@@ -128,80 +143,120 @@ def fig_anomaly() -> None:
     save(fig, "fig_anomaly")
 
 
-def fig_workflow() -> None:
-    """Workflow of the study: (a) graph construction and evaluation, (b) citation windows of the labelled cohorts
-    against the prediction date of each protocol."""
-    from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
+def plantuml_command() -> list[str] | None:
+    """Command that runs PlantUML: the jar named by ``PLANTUML_JAR``, or ``plantuml`` on the PATH."""
+    jar = os.environ.get("PLANTUML_JAR")
+    if jar and Path(jar).expanduser().is_file() and shutil.which("java"):
+        return ["java", "-Djava.awt.headless=true", "-jar", str(Path(jar).expanduser())]
+    exe = shutil.which("plantuml")
+    return [exe] if exe else None
 
-    fig = plt.figure(figsize=(6.3, 5.6))
-    gs = fig.add_gridspec(2, 1, height_ratios=[1.0, 1.05], hspace=0.2)
 
-    # ---- (a) pipeline
-    ax = fig.add_subplot(gs[0])
-    ax.set_xlim(0, 100)
-    ax.set_ylim(0, 44)
-    ax.axis("off")
-    ax.grid(False)
-    boxes = [
-        (1, 25, "1  OpenAlex snapshot", "works, authors, venues,\nyearly citation counts"),
-        (26, 25, "2  Sample", "48 topics × 250 papers,\n2017-2022, and seed papers"),
-        (51, 25, "3  Reference selection", "at least 2 citing papers;\ncap, or citers before T only"),
-        (76, 25, "4  Features before y", "authors, venue, references:\ncitations received before y"),
-        (1, 3, "5  Graphs", "citation (reference → paper),\nheterogeneous, venue graph"),
-        (26, 3, "6  Labels", "citations in years y .. y+k;\ntop 10 % of the cohort"),
-        (51, 3, "7  Protocols", "mature labels at T (primary),\nretrospective, K-fold, holdout"),
-        (76, 3, "8  Comparison", "tuned MLP and GNNs;\npaired differences, 95 % CI"),
-    ]
-    w, h = 23, 15
-    for x, y, title, body in boxes:
-        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.3,rounding_size=1.2", fc="#f3f6fb",
-                                    ec=SLOTS[0], lw=0.9))
-        ax.text(x + w / 2, y + h - 3.2, title, ha="center", va="center", fontsize=7.6, fontweight="bold", color=INK)
-        ax.text(x + w / 2, y + 5.4, body, ha="center", va="center", fontsize=6.2, color=INK2, linespacing=1.25)
-    arrow = dict(arrowstyle="-|>", mutation_scale=8, lw=0.9, color=INK2)
-    for x in (24.4, 49.4, 74.4):
-        ax.add_patch(FancyArrowPatch((x, 32.5), (x + 1.4, 32.5), **arrow))
-        ax.add_patch(FancyArrowPatch((x, 10.5), (x + 1.4, 10.5), **arrow))
-    ax.add_patch(FancyArrowPatch((87.5, 24.4), (87.5, 21.4), connectionstyle="arc3", **arrow))
-    ax.plot([87.5, 87.5, 12.5, 12.5], [21.4, 21.4, 21.4, 21.4], color=INK2, lw=0.9)
-    ax.add_patch(FancyArrowPatch((12.5, 21.4), (12.5, 18.6), **arrow))
-    ax.text(0, 43, "(a)", fontsize=9, fontweight="bold", color=INK)
+def workflow_panel_a() -> Path:
+    """Panel (a): ``fig_workflow_a.puml`` rendered by PlantUML (EPS, text as outlines) and cropped to a PDF by
+    Ghostscript. Without PlantUML or Ghostscript the versioned ``fig_workflow_a.pdf`` is reused."""
+    src, pdf = OUT / "fig_workflow_a.puml", OUT / "fig_workflow_a.pdf"
+    cmd = plantuml_command()
+    if cmd is None or not shutil.which("gs"):
+        if not pdf.exists():
+            raise SystemExit(f"{pdf.name} is missing and cannot be drawn: set PLANTUML_JAR (with java) or install "
+                             "plantuml, and install Ghostscript")
+        print(f"WARNING: PlantUML or Ghostscript not found; {pdf.name} is reused and NOT redrawn from {src.name}")
+        return pdf
+    eps = subprocess.run(cmd + ["-pipe", "-teps", "-charset", "UTF-8"], input=src.read_bytes(),
+                         capture_output=True, check=True).stdout
+    if not eps.startswith(b"%!PS") or b"Syntax Error" in eps:
+        raise SystemExit(f"PlantUML could not render {src.name}")
+    with tempfile.TemporaryDirectory() as tmp:
+        (Path(tmp) / "a.eps").write_bytes(eps)
+        subprocess.run(["gs", "-q", "-dNOPAUSE", "-dBATCH", "-dEPSCrop", "-sDEVICE=pdfwrite", f"-sOutputFile={pdf}",
+                        str(Path(tmp) / "a.eps")], check=True)
+    return pdf
 
-    # ---- (b) citation windows and prediction dates (k = 3)
-    ax = fig.add_subplot(gs[1])
+
+def workflow_panel_b(path: Path, width: float, height: float) -> None:
+    """Panel (b): citation windows of the labelled cohorts against the prediction dates (k = 3); size in inches."""
+    from matplotlib.patches import Rectangle
+
+    fig, ax = plt.subplots(figsize=(width, height))
     cohorts = list(range(2017, 2023))
     role = {2017: "train", 2018: "train", 2019: "retro", 2020: "retro", 2021: "retro", 2022: "test"}
     colour = {"train": SLOTS[0], "retro": "#b9b8b3", "test": SLOTS[1]}
     for i, y in enumerate(cohorts):
         ax.add_patch(Rectangle((y, i - 0.32), 4, 0.64, fc=colour[role[y]], ec="white", lw=0.6, zorder=2))
         ax.plot([y], [i], marker="|", color=INK, markersize=9, markeredgewidth=1.2)
-        ax.text(y + 2, i, f"window {y}-{y + 3}", ha="center", va="center", fontsize=7, zorder=6,
+        ax.text(y + 2, i, f"window {y}-{y + 3}", ha="center", va="center", fontsize=6.6, zorder=6,
                 color="white" if role[y] != "retro" else INK,
                 bbox=dict(fc=colour[role[y]], ec="none", pad=1.0))     # the label stays readable under the T lines
     ax.set_axisbelow(True)
     ax.axvline(2022, color=INK, lw=1.2, zorder=4)
-    ax.text(2022.08, 6.55, "prediction date T = 2022 (primary protocol)", fontsize=7, va="center", color=INK)
+    ax.text(2022.12, 6.12, "prediction date T = 2022\n(primary protocol)", fontsize=6.6, va="center", color=INK,
+            linespacing=1.15)
     ax.axvline(2021, color=INK2, lw=0.9, ls=(0, (4, 3)), zorder=4)
-    ax.text(2020.92, 6.55, "T = 2021 of the retrospective split", fontsize=7, va="center", ha="right", color=INK2)
+    ax.text(2020.88, 6.12, "T = 2021 of the\nretrospective split", fontsize=6.6, va="center", ha="right", color=INK2,
+            linespacing=1.15)
     ax.axvspan(2026, 2027, color="#efeeea", zorder=0)
     ax.text(2026.5, 2.5, "2026: incomplete year", rotation=90, ha="center", va="center", fontsize=6.6, color=INK2)
     ax.set_xlim(2016.6, 2027)
-    ax.set_ylim(-0.7, 7.0)
-    ax.set_yticks(range(len(cohorts)), [f"cohort {y}" for y in cohorts])
-    ax.set_xticks(range(2017, 2027))
-    ax.set_xlabel("calendar year (a bar covers the citation window y .. y+3 of the cohort published in year y)")
+    ax.set_ylim(-0.7, 6.7)
+    ax.set_yticks(range(len(cohorts)), [f"cohort {y}" for y in cohorts], fontsize=7.5)
+    ax.set_xticks(range(2017, 2027), [str(y) for y in range(2017, 2027)], fontsize=6.8)
+    ax.set_xlabel("calendar year (a bar covers the citation window\ny .. y+3 of the cohort published in year y)",
+                  fontsize=7.2, linespacing=1.2)
     ax.grid(axis="y", visible=False)
     handles = [Rectangle((0, 0), 1, 1, fc=colour[r]) for r in ("train", "retro", "test")]
     ax.legend(handles, ["training and validation labels (closed before T)",
                         "labels still open at T (retrospective protocols only)", "test cohort"],
-              loc="upper center", fontsize=6.8, ncol=3, bbox_to_anchor=(0.46, -0.2), columnspacing=1.2, handlelength=1.4)
-    ax.set_title("(b)", loc="left", fontsize=9, fontweight="bold", color=INK, x=-0.17)
-    save(fig, "fig_workflow")
+              loc="upper center", fontsize=6.8, ncol=1, bbox_to_anchor=(0.42, -0.17), handlelength=1.4)
+    fig.savefig(path)
+    plt.close(fig)
+
+
+WORKFLOW_TEX = r"""\documentclass[border=1pt]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx,graphicx,xcolor}
+\begin{document}\color{black}%% explicit: the article sets the float in red
+\begin{tabular}{@{}l@{\hspace{%(gap).1fpt}}l@{}}
+\fontsize{9}{11}\selectfont\textbf{(a)} & \fontsize{9}{11}\selectfont\textbf{(b)}\\[2pt]
+\raisebox{-\height}{\includegraphics[scale=%(scale).3f]{a.pdf}} &
+\raisebox{-\height}{\includegraphics[width=%(wb).1fpt]{b.pdf}}
+\end{tabular}%%
+\end{document}
+"""
+
+
+def fig_workflow() -> None:
+    """Workflow of the study: (a) graph construction and evaluation, as a UML activity diagram drawn by PlantUML,
+    (b) citation windows of the labelled cohorts against the prediction date of each protocol. The two panels are
+    set side by side with LaTeX, at the text width of the article."""
+    total, gap, scale = 470.0, 10.0, 0.62          # points: text width of the article, gutter; scale of panel (a)
+    a = workflow_panel_a()
+    box = re.search(rb"/MediaBox\s*\[\s*([\d.]+)\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)", a.read_bytes())
+    wa, ha = (float(box.group(3)) - float(box.group(1))) * scale, (float(box.group(4)) - float(box.group(2))) * scale
+    wb = total - gap - wa
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        shutil.copy(a, tmp / "a.pdf")
+        workflow_panel_b(tmp / "b.pdf", wb / 72, 0.9 * ha / 72)
+        (tmp / "fig_workflow.tex").write_text(WORKFLOW_TEX % {"gap": gap, "scale": scale, "wb": wb})
+        r = subprocess.run(["pdflatex", "-interaction=nonstopmode", "-halt-on-error", "fig_workflow.tex"], cwd=tmp,
+                           capture_output=True, text=True)
+        if r.returncode:
+            raise SystemExit("LaTeX failed on the workflow figure:\n" + r.stdout[-1500:])
+        OUT.mkdir(exist_ok=True)
+        shutil.copy(tmp / "fig_workflow.pdf", OUT / "fig_workflow.pdf")
+    subprocess.run(["gs", "-q", "-dNOPAUSE", "-dBATCH", "-sDEVICE=png16m", "-r300", "-dTextAlphaBits=4",
+                    "-dGraphicsAlphaBits=4", f"-sOutputFile={OUT / 'fig_workflow.png'}", str(OUT / "fig_workflow.pdf")],
+                   check=True)
 
 
 if __name__ == "__main__":
-    fig_text_structure()
-    fig_hetero()
-    fig_anomaly()
-    fig_workflow()
+    FIGURES = {"text_structure": fig_text_structure, "hetero": fig_hetero, "anomaly": fig_anomaly,
+               "workflow": fig_workflow}
+    names = sys.argv[1:] or list(FIGURES)             # ``figures.py workflow`` redraws that figure only
+    unknown = [n for n in names if n not in FIGURES]
+    if unknown:
+        raise SystemExit(f"unknown figure(s) {unknown}; choose among {list(FIGURES)}")
+    for n in names:
+        FIGURES[n]()
     print("figures written to", OUT)

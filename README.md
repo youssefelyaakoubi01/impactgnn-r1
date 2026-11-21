@@ -66,8 +66,14 @@ The contact address for the OpenAlex polite pool is read from the environment va
 `<!--/supplement-->`); `paper/md2tex.py` generates `paper/paper.tex` and `paper/supplement.tex`, with the changes of
 the revision in red, and their `_clean` copies (IJASCA-like layout,
 `references.bib` written by `paper/verify_refs.py` from Crossref/arXiv metadata). `paper/figures.py` draws the
-figures from `results/`, and `paper/check_numbers.py` checks that every number of the paper, or of the response
-letter when it is given `paper/response_to_reviewers.tex`, appears in the pipeline outputs. `paper/refs_md.py keys|numbers` switches the citations of `axis1.md` between `[@key]` (for
+figures from `results/`; panel (a) of the workflow figure is the UML activity diagram
+`paper/figures/fig_workflow_a.puml`, rendered by PlantUML (`PLANTUML_JAR=/path/to/plantuml.jar` with Java, or a
+`plantuml` command; Ghostscript and its Nimbus Roman font) and set next to panel (b) with `pdflatex`. Without
+PlantUML the versioned `fig_workflow_a.pdf` is reused; `paper/figures.py workflow` redraws that figure only.
+`paper/check_numbers.py` checks that every number of the paper, or of the response
+letter when it is given `paper/response_to_reviewers.tex`, appears in the pipeline outputs. `paper/check_marks.py` checks that every
+passage of the article that is not printed in red is found in the submitted version (tag `v1-submitted`).
+`paper/refs_md.py keys|numbers` switches the citations of `axis1.md` between `[@key]` (for
 editing) and numbers, and regenerates its reference list from the verified metadata in the same order as the PDF.
 `paper/scopus/` holds the Scopus export used for the related work and the screening decision for each record
 (`screening.csv`).

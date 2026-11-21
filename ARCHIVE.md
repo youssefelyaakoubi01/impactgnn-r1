@@ -1,6 +1,6 @@
 # Archive of the revision
 
-Snapshot of the development repository at commit `6a5a1f4d95e1cbbc6e16710a3e9822b5273d8838`, without its history; the tags and branches named in `README.md` belong to that repository.
+Snapshot of the development repository at commit `065f38bf0a25954f41321319ef175a4ed37f3e20`, without its history; the tags and branches named in `README.md` belong to that repository.
 
 | Path | Content |
 |---|---|

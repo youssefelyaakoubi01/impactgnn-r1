@@ -1,0 +1,38 @@
+' Panel (a) of the workflow figure: the eight steps of Algorithm 1 as a UML activity diagram.
+' Rendered by paper/figures.py (PlantUML, EPS output, then Ghostscript); a ";" ends an action, so no line of a
+' label may end with one. Nimbus Roman is the Times clone of the URW base-35 fonts installed with Ghostscript; Java
+' spaces its outlines evenly at this size, which it does not for the hinted Liberation Serif.
+@startuml
+skinparam monochrome true
+skinparam shadowing false
+skinparam backgroundColor white
+skinparam defaultFontName "Nimbus Roman"
+skinparam defaultFontSize 11
+skinparam defaultTextAlignment center
+skinparam ActivityBackgroundColor white
+skinparam ActivityBorderColor black
+skinparam ActivityBorderThickness 0.8
+skinparam ActivityStartColor black
+skinparam ActivityEndColor black
+skinparam ArrowColor black
+skinparam ArrowThickness 0.8
+
+start
+:**1. OpenAlex snapshot**
+works, authors, venues, yearly citation counts;
+:**2. Sample**
+48 topics × 250 papers, 2017-2022, and seed papers;
+:**3. Reference selection**
+at least 2 citing papers; cap, or citers before //T// only;
+:**4. Features before //y//**
+authors, venue, references: citations received before //y//;
+:**5. Graphs**
+citation (reference → paper), heterogeneous, venue graph;
+:**6. Labels**
+citations in years //y// .. //y//+//k//; top 10 % of the cohort;
+:**7. Protocols**
+mature labels at //T// (primary), retrospective, K-fold, holdout;
+:**8. Comparison**
+tuned MLP and GNNs; paired differences, 95 % CI;
+stop
+@enduml

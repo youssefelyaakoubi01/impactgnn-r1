@@ -309,6 +309,26 @@
   "median_year_cut": 2019.0,
   "median_year_kept_two_citers": 2012.0
  },
+ "hetero_entities": {
+  "author": {
+   "nodes": 44623,
+   "with_paper_node": 44623,
+   "isolated": 0
+  },
+  "venue": {
+   "nodes": 27469,
+   "with_paper_node": 9914,
+   "isolated": 17555
+  },
+  "keyword": {
+   "nodes": 56967,
+   "with_paper_node": 56967,
+   "isolated": 0,
+   "two_papers_before_2022": 52204,
+   "fewer_before_2022": 4763,
+   "share_fewer_before_2022": 0.084
+  }
+ },
  "labelled_seeds_k3": 336,
  "protocols": {
   "mature_2022": {

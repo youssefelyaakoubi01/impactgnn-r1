@@ -11,6 +11,10 @@ results/rev1 (statistics, generated tables, selected hyperparameters) and the re
 citation brackets, table/figure/section/algorithm/equation numbers, years, integers up to 10, and the formulas
 (display and inline math, the algorithm block and the nomenclature table), which hold symbols rather than results.
 Every other number that is not found is printed for manual review.
+
+A second check takes every paired difference written with its interval, ``x [a, b]``, as one unit: it must be a
+contrast stored in results/rev1/stats/tables.json, printed as the tables print it, or a cell of a generated table.
+The first check alone accepts an interval whose bounds are numbers of another contrast.
 """
 
 from __future__ import annotations
@@ -37,6 +41,29 @@ SOURCES += [REV / "hpo" / "best.json", ROOT / "data" / "processed" / "full" / "r
             ROOT / "build_rev1.py", ROOT / "anomaly_rev1.py", ROOT / "stats.py", ROOT / "external" / "README.md"]
 
 NUM = re.compile(r"(?<![\w.])[−-]?\d[\d,]*(?:\.\d+)?(?![\w])")
+INTERVAL = re.compile(r"[+−-]?\d\.\d{3,4} \[[+−-]?\d\.\d{3,4}, [+−-]?\d\.\d{3,4}\]")
+
+
+def recorded_intervals() -> tuple[set[str], str]:
+    """Every stored contrast, formatted by ``make_tables.diff_ci``, and the text of the generated tables."""
+    sys.path.insert(0, str(ROOT))
+    from make_tables import diff_ci
+
+    out: set[str] = set()
+
+    def walk(o) -> None:
+        if isinstance(o, dict):
+            if "diff" in o and "ci" in o and "different" in o:
+                out.add(diff_ci(o).rstrip("ᵃᵇ").replace("−", "-"))
+            for v in o.values():
+                walk(v)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v)
+
+    walk(json.loads((REV / "stats" / "tables.json").read_text()))
+    tables = "\n".join(p.read_text() for p in sorted((REV / "tables").glob("*.md"))).replace("−", "-")
+    return out, tables
 
 
 def corpus_numbers() -> set[str]:
@@ -114,6 +141,18 @@ def main() -> None:
     for ln, raw, ctx in missing:
         print(f"line {ln}: {raw}  | {ctx}")
     print(f"{len(missing)} number(s) not found in the pipeline outputs")
+    stored, tables = recorded_intervals()
+    unmatched = []
+    for ln, line in enumerate(text.splitlines(), 1):
+        if line.startswith("|"):                                                  # table rows are generated
+            continue
+        for m in INTERVAL.finditer(line):
+            unit = m.group(0).replace("−", "-")
+            if unit not in stored and unit not in tables:
+                unmatched.append((ln, m.group(0), line[max(0, m.start() - 80):m.start()].strip()))
+    for ln, raw, ctx in unmatched:
+        print(f"line {ln}: {raw}  | ... {ctx}")
+    print(f"{len(unmatched)} interval(s) that match no stored contrast")
 
 
 if __name__ == "__main__":

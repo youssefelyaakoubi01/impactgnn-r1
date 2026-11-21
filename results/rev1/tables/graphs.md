@@ -4,7 +4,7 @@
 |---|---|---|---|---|
 | None (the MLP does not use the graph) | MLP | Spearman | 0.639 ± 0.005 | reference |
 |  | MLP | ROC-AUC | 0.796 ± 0.013 | reference |
-| Initial (all years, cap by identifier) | MLP + in-graph aggregates | Spearman | 0.640 ± 0.004 | +0.001 [−0.006, +0.008]ᵃ |
+| All years, cap 60,000 (ties by identifier) | MLP + in-graph aggregates | Spearman | 0.640 ± 0.004 | +0.001 [−0.006, +0.008]ᵃ |
 |  | GraphSAGE | Spearman | 0.619 ± 0.005 | −0.020 [−0.029, −0.011]ᵇ |
 |  | GAT | Spearman | 0.619 ± 0.005 | −0.020 [−0.030, −0.010]ᵇ |
 |  | HGT (rolling rule) | ROC-AUC | 0.814 ± 0.004 | +0.018 [+0.009, +0.028]ᵇ |

@@ -1,4 +1,4 @@
-**Table @coldstart.** Cold start: test papers absent from the training graph (Spearman correlation). Primary protocol: *k* = 3, labels closed before the prediction date, mean ± std over 15 runs. Retrospective temporal split of the initial version: mean ± std over 5 seeds. Primary analysis for the primary protocol; the other columns are retrospective.
+**Table @coldstart.** Cold start: test papers absent from the training graph (Spearman correlation). Primary protocol: *k* = 3, labels closed before the prediction date, mean ± std over 15 runs. Retrospective temporal split: mean ± std over 5 seeds. Primary analysis for the primary protocol; the other columns are retrospective.
 
 | Variant | Primary protocol | Primary: Δ vs MLP, all features | Retrospective, *k* = 3 | Retrospective, *k* = 5 |
 |---|---|---|---|---|

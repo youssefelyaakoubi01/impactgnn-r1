@@ -13,4 +13,4 @@
 | HGT without author nodes and features | – | – | 0.799 ± 0.005 | −0.014 [−0.026, −0.003]ᵇ |
 | HGT with papers and venues only | – | – | 0.807 ± 0.005 | −0.006 [−0.020, +0.006] |
 
-ᵇ Different: the 95 % interval excludes zero. The other differences are inconclusive. Abbreviations: MLP: multilayer perceptron; HGT: heterogeneous graph transformer; ROC-AUC: area under the ROC curve; rolling rule: year-specific author, venue and keyword nodes that aggregate only earlier papers; Δ: paired difference (first model minus second model, or model minus reference).
+ᵇ Different: the 95 % interval excludes zero. The other differences are inconclusive. Paired difference in ROC-AUC between HGT (rolling rule) and the MLP: +0.017 [+0.008, +0.027] with all features, and +0.014 [+0.002, +0.025] between HGT without author nodes and features and the MLP without author features. Abbreviations: MLP: multilayer perceptron; HGT: heterogeneous graph transformer; ROC-AUC: area under the ROC curve; rolling rule: year-specific author, venue and keyword nodes that aggregate only earlier papers; Δ: paired difference (first model minus second model, or model minus reference).
