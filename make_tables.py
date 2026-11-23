@@ -43,10 +43,17 @@ def diff_ci(c: dict) -> str:
     """Paired difference with its 95 % interval; ᵃ = equivalent within the margin, ᵇ = interval excludes zero."""
     mark = "ᵃ" if c["equivalent"] else ("ᵇ" if c["different"] else "")
 
-    def bound(x: float) -> str:          # a bound that rounds to zero keeps one more digit, so that its sign is visible
-        return signed(x, 4) if round(x, 3) == 0 and round(x, 4) != 0 else signed(x)
+    def bound(x: float, outside: bool) -> str:
+        # one more digit for a bound that rounds to zero, so that its sign is visible, and for a bound that lies
+        # outside the equivalence margin but rounds to it, so that the printed interval agrees with the mark
+        if round(x, 3) == 0 and round(x, 4) != 0:
+            return signed(x, 4)
+        if outside and round(abs(x), 3) == S.MARGIN:
+            return signed(x, 4)
+        return signed(x)
 
-    return f"{signed(c['diff'])} [{bound(c['ci'][0])}, {bound(c['ci'][1])}]{mark}"
+    lo, hi = c["ci"]
+    return f"{signed(c['diff'])} [{bound(lo, lo < -S.MARGIN)}, {bound(hi, hi > S.MARGIN)}]{mark}"
 
 
 # Role of each table, printed at the end of its caption: the primary analyses were specified before the experiments of
@@ -392,7 +399,7 @@ def tables_coldstart() -> None:
     write("coldstart", "Cold start: test papers absent from the training graph (Spearman correlation). Primary "
                        "protocol: *k* = 3, labels closed before the prediction date, mean ± std over 15 runs. "
                        "Retrospective temporal split: mean ± std over 5 seeds.",
-          ["Variant", "Primary protocol", "Primary: Δ vs MLP, all features", "Retrospective, *k* = 3",
+          ["Variant", "Primary protocol", "Primary: Δ vs MLP, all features + reference aggregates", "Retrospective, *k* = 3",
            "Retrospective, *k* = 5"], rows, NOTE)
     sub = sel(runs("retro"), task="reg", k=3)
     if "train_subsample" in sub:

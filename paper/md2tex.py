@@ -58,6 +58,7 @@ PREAMBLE = r"""% Generated from axis1.md by md2tex.py. Layout reproduced from an
 \IfFileExists{algorithm.sty}{\usepackage{algorithm}}{% same ruled float as algorithm.sty, for installations without it
   \usepackage{float}\floatstyle{ruled}\newfloat{algorithm}{htbp}{loa}\floatname{algorithm}{Algorithm}}
 \usepackage{cite}
+\usepackage{placeins}
 \usepackage{xr-hyper}
 \usepackage[hidelinks]{hyperref}
 %%EXTERNAL%%
@@ -66,6 +67,13 @@ PREAMBLE = r"""% Generated from axis1.md by md2tex.py. Layout reproduced from an
 \renewcommand{\citepunct}{,\penalty\citepunctpenalty\hskip0.25em\relax}
 \urlstyle{same}
 \graphicspath{{figures/}}
+% floats go to the top or the bottom of a text page; a page of floats only is made when it is at least 80 % full
+% (with the defaults of LaTeX a table of half a page was set alone on a page, between two halves of a sentence)
+\renewcommand{\topfraction}{0.85}\renewcommand{\bottomfraction}{0.70}
+\renewcommand{\textfraction}{0.10}\renewcommand{\floatpagefraction}{0.80}
+\setcounter{topnumber}{3}\setcounter{bottomnumber}{2}\setcounter{totalnumber}{4}
+% no first or last line of a paragraph alone at the bottom or the top of a page, in lists too
+\clubpenalty=10000 \widowpenalty=10000 \makeatletter\@clubpenalty=\clubpenalty\makeatother
 \captionsetup{font=small,labelfont=bf,labelsep=period,justification=centering}
 \setlist{itemsep=2pt,topsep=4pt}
 \setlength{\parindent}{1.5em}\setlength{\parskip}{3pt}\setlength{\emergencystretch}{1.5em}
@@ -376,13 +384,14 @@ def convert(md: str, external: str = "", supplement: bool = False) -> str:
                     out.append(r"\endgroup")
                     in_decl = False
                 in_refs = True
-                out.append(r"\clearpage" + "\n" + r"{\small\begin{thebibliography}{99}\setlength{\itemsep}{1pt}")
+                out.append(r"\FloatBarrier" + "\n" + r"{\small\begin{thebibliography}{99}\setlength{\itemsep}{1pt}")
             elif title == "Declarations":
-                out.append(r"\clearpage" + "\n" + r"\section*{\texorpdfstring{\normalsize DECLARATIONS}{Declarations}}" + "\n"
+                out.append(r"\FloatBarrier" + "\n" + r"\section*{\texorpdfstring{\normalsize DECLARATIONS}{Declarations}}" + "\n"
                            + r"\begingroup\small")
                 in_decl = True
             elif m.group(1) == "##":
                 out.append((r"\clearpage" + "\n" if title.startswith("Appendix") else "") +   # floats of the text first
+                           (r"\FloatBarrier" + "\n" if SUPP else "") +           # a section of the supplement keeps its tables
                            (r"\section*{" if not m.group(2) else r"\section{") + R(inline(title)) + "}")
             else:
                 out.append(r"\subsection{" + R(inline(title)) + "}")

@@ -2,7 +2,7 @@
 
 | Model | Compared with | Primary protocol | Retrospective K-fold |
 |---|---|---|---|
-| GraphSAGE | MLP + in-graph aggregates | −0.019 [−0.029, −0.008]ᵇ | −0.005 [−0.010, −0.0001]ᵇ |
+| GraphSAGE | MLP + in-graph aggregates | −0.019 [−0.029, −0.008]ᵇ | −0.005 [−0.0102, −0.0001]ᵇ |
 | GAT | MLP + in-graph aggregates | −0.027 [−0.038, −0.015]ᵇ | −0.002 [−0.007, +0.003]ᵃ |
 | GraphSAGE + all-reference aggregates | MLP + all-reference aggregates | −0.010 [−0.017, −0.002]ᵇ | +0.002 [−0.003, +0.007]ᵃ |
 | GAT + all-reference aggregates | MLP + all-reference aggregates | −0.018 [−0.026, −0.009]ᵇ | +0.004 [−0.003, +0.011] |

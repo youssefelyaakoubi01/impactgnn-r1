@@ -16,7 +16,7 @@
 |  | GraphSAGE | Spearman | 0.626 ± 0.006 | −0.013 [−0.022, −0.003]ᵇ |
 |  | GAT | Spearman | 0.621 ± 0.006 | −0.018 [−0.028, −0.008]ᵇ |
 |  | HGT (rolling rule) | ROC-AUC | 0.804 ± 0.010 | +0.007 [−0.003, +0.018] |
-| Restricted to 2022 (primary) | MLP + in-graph aggregates | Spearman | 0.642 ± 0.006 | +0.003 [−0.004, +0.010] |
+| Restricted to 2022 (primary) | MLP + in-graph aggregates | Spearman | 0.642 ± 0.006 | +0.003 [−0.004, +0.0102] |
 |  | GraphSAGE | Spearman | 0.624 ± 0.009 | −0.016 [−0.025, −0.006]ᵇ |
 |  | GAT | Spearman | 0.615 ± 0.009 | −0.024 [−0.034, −0.013]ᵇ |
 |  | HGT (rolling rule) | ROC-AUC | 0.813 ± 0.007 | +0.017 [+0.008, +0.027]ᵇ |
